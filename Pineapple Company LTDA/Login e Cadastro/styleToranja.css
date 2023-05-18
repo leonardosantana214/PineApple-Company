@@ -1,0 +1,123 @@
+form {
+    margin: auto;
+    margin-top: 5%;
+    background-color: violet;
+    border: solid 15px black;
+    text-align: center;
+    height: 400px;
+    width: 500px;
+    color: purple;
+    transition: 3s;
+    
+}
+form:hover{
+    box-shadow: 0 0 50px violet, 0 0 70px violet;
+    background-color: #fff ;
+    transition: 1s;
+}
+/*bnt.Neon*/
+.bntneon {
+    padding: 4px solid;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+    margin: 60px;
+    color: violet;
+    font-family:monospace;
+    text-decoration: none;
+    transition: 0,4s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+    
+    margin-top: 0px;
+    border: 2px solid violet;
+    height: 50px;
+    transition: 2s;
+    background-color: transparent;
+
+
+}
+.bntneon:hover{
+    background-color: violet;
+    border: 2px purple solid;
+    color: white;
+    box-shadow: 0 0 10px violet, 0 0 40px violet, 0 0 70px violet;
+    transition: 0.5s;
+    
+
+}
+.bntneon:active{
+    color: violet;
+    background: purple;
+}
+.email, .senha {
+    margin: 10%;
+    font-family:monospace;
+    color: violet;
+    font-size: x-large;
+
+}
+body {
+    background-color: #fff;
+    background-size: auto;
+    background-position: fixed center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+
+}
+.title {
+    color: black;
+    
+    font-family: monospace;
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+    
+    margin: center;
+
+}
+
+.Mail, .Password {
+    background-color: transparent;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    border-color: black;
+    border-radius: 50px;
+    height: 30px;
+    width: 300px;
+}
+.Mail:hover, .Password:hover{
+    border: 2px solid blueviolet;
+    box-shadow: inset 0 0 30px violet , 0 0 20px purple;
+    transition: 1s;
+    
+}
+.email:hover, .senha:hover {
+    color: black ;
+}
+.f1{
+    color: blueviolet;
+    margin: 100px;
+    font-family: monospace;
+}
+.conta{
+   margin: 100px;
+   color: blueviolet;
+   font-family: monospace;
+   transform: translateX(0) scale(0.5);
+}
+::-webkit-input-placeholder {
+    color: purple;
+    font-family: monospace;
+    text-align: center;
+}
+::-webkit-validation-bubble-text-block-form{
+    animation: forwards infinite infinite infinite alternate both;
+}
+.conta:hover, .f1:hover, .conta:focus, .f1:focus {
+    color: violet;
+    transition: 1s;
+    transform:translateX(1.2) scale(20px) ;
+}

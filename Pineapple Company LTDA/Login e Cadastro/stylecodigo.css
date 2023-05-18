@@ -1,0 +1,66 @@
+body{
+    background-color: white;
+    padding: 100px;
+}
+.Pass, .codes{
+    background-color: transparent;
+    border:1px solid violet;
+    border-radius: 50px;
+    transition: 1s;
+    color: black;
+    font-family: monospace;
+}
+.Pass:hover, .codes:hover{
+    color: violet;
+    border: 1px solid purple;
+    border-radius: 50px;
+    transition: 1s;
+    box-shadow:inset 0 0 10px purple, 0 0 20px violet ;
+}
+.Codigo{
+    color: violet;
+    font-family: monospace;
+    font-size: medium;
+    text-align: center;
+}
+h1 {
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center;
+}
+.Codigo:hover{
+    color: black;
+}
+form {
+    border: solid 15px black;
+    padding: 50px;
+    background-color: violet;
+    margin: 250px;
+    transition: 1s;
+    
+}
+form:hover{
+    background-color: white;
+    box-shadow: 0 0 70px purple;
+    transition: 2s;
+}
+button{
+ background-color: transparent;
+ color:violet ; 
+ border-radius: 50px;
+ border: 2px solid violet ;
+ transition: 2s;
+ text-align: center;
+ margin-left: 200px;
+}
+button:hover{
+    background-color: violet;
+    color: white;
+    box-shadow: 0 0 50px purple;
+    border-color: purple;
+    transition: 1s;
+}
+::-webkit-input-placeholder {
+    color: violet;
+    font-family: monospace;
+}
