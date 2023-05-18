@@ -1,14 +1,24 @@
+
+/* FONTE DO SITE */
 @import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* FUNDO FONTE DA LETRA */
 body{
     font-family: 'Raleway', sans-serif;
 }
+
+/* H1 DO CADASTRO */
 .F1 {
     color: #000;
 }
+
+/* INPUT EMAIL */
 .Texto{
     size: 100px;
    
 }
+
+/* FUNDO STYLE */
 body {
     background-color: white;
     background-size: auto;
@@ -20,11 +30,15 @@ body {
     height: auto;
     
 }
+
+/* STYLE GERAL DE DIVS, SPAN, H1 */
 .F2, .f4, .F3, .F5, .feminino, .Masculino, .nãobinario, .Generos, .A1, .T6, .Data, .estado, .T7, .T10, .t2, .numero{
     font-size: large;
     color: violet;
     background-color: transparent;
 }
+
+/* HOVER GERAL DE DIVS, SPAN, H1 */
 .F2:hover, .f4:hover, .F3:hover, .F5:hover, .feminino:hover, .Masculino:hover, .nãobinario:hover, .Generos:hover, .A1:hover, .T6:hover, .Data:hover, .T7:hover, .T10:hover, .numero:hover {
     font-size: large;
     color: black;
@@ -32,16 +46,20 @@ body {
     
 }
 
+/* HOVER GERAL DOS INPUTS */
 .rua:hover, .Nome:hover, .vila:hover, .city:hover, .Texto:hover, .estado:hover, .C1:hover, .C2:hover, .C3:hover, .feminino:hover, .Data:hover, .Rua:hover {
     background-color: transparent;
     transition: 1s;
    
 }
+
+/* WEBKIY PLACEHOLDER GERAL */
 ::-webkit-input-placeholder{
     color: violet
     
 }
 
+/* FORMULÁRIO */
 form {
     margin-left: 0px;
     padding: 20px;
@@ -58,6 +76,7 @@ form {
     
 }
 
+/* HOVER DO FORMULÁRIO */
 form:hover {
     box-shadow: 0 0 80px purple, 0 0 50px blueviolet;
     box-sizing: border-box;
@@ -72,12 +91,15 @@ form:hover {
     opacity: 0,6;
 }
 
+/* BOTÃO LIMPAR OS CAMPOS */
 .t4 {
     background-color: transparent;
     border: red solid 1px;
     color: red;
     border-radius: 50px;
 }
+
+/* HOVER BOTÃO LIMPAR OS CAMPOS */
 .t4:hover {
     background-color: red;
     color: #fff;
@@ -85,6 +107,7 @@ form:hover {
     
 }
 
+/* BOTÃO ENVIAR DADOS */
 .t3 {
     background-color: transparent;
     color: aqua;
@@ -92,16 +115,20 @@ form:hover {
     input-security: auto;
     border-radius: 50px;
 }
+
+/* HOVER BOTÃO ENVIAR DADOS */
 .t3:hover {
     background-color: aqua;
     color:#fff;
     box-shadow: 0 0 20px aqua, 0 0 10px aqua;
 }
-.Rua {
+
+/* INPUT ENDEREÇO */
+.rua {
     width: 5%;
     border-radius: 0;
 }
-/* tela De Carregramento */
+/* TELA DE CARREGAMENTO */
 .preloader{
     display: block;
     margin: auto;
@@ -111,7 +138,8 @@ form:hover {
     height: 600px;
     margin: auto;
 }
-/* scrollBar */
+
+/* SCROLLBAR NA PÁGINA */
 ::-webkit-scrollbar{
     color: transparent;
     border: solid transparent 1px;
@@ -132,26 +160,31 @@ form:hover {
     width: 1px;
     
 }
+
+/* MARGIN AUTO TELA INTEIRA */
 *{
     margin: auto;
 }
-/* focus */
+/* FOCUS NOS INPUTS */
 .rua:focus, .Nome:focus, .vila:focus, .city:focus, .Texto:focus, .estado:focus, .nascimento:focus, .C1:focus, .C2:focus, .C3:focus, .feminino:focus, .Data:focus, .estado:focus, .Rua:focus {
     outline-color:purple ;
     outline-style: solid;
     outline-width: 2px;
     transition: all 1s;
 }
-/* invalid e Valid */
+/* INPUT CONDIÇÃO INVÁLIDA */
 .rua:invalid, .Nome:invalid, .vila:invalid, .city:invalid, .Texto:invalid, .estado:invalid, .nascimento:invalid, .C1:invalid, .C2:invalid, .C3:invalid, .feminino:invalid, .Data:invalid, .estado:invalid, .Rua:invalid{
     color:red;
     outline-color:red ;
 }
+
+/* INPUTS CONDIÇÃO VÁLIDA */
 .rua:valid, .Nome:valid, .vila:valid, .city:valid, .Texto:valid, .estado:valid, .nascimento:valid, .C1:valid, .C2:valid, .C3:valid, .feminino:valid, .Data:valid, .estado:valid, .Rua:valid{
     color:green;
     outline-color:green ;
 }
-/* linhas dos input */
+
+/* LINHAS DO FORMULÁRIO (INPUTS) */
 .rua, .Nome, .vila, .city, .Texto, .estado, .nascimento, .C1, .C2, .C3, .feminino, .Data, .estado {
     border-bottom: solid gray 1px;
     width: 260px;
@@ -160,6 +193,8 @@ form:hover {
     border-right: none;
     background-color: transparent;
 }
+
+/* INPUT DE NÚMERO CSS */
 .number{
     width: 20px;
     background-color: transparent;
@@ -170,29 +205,39 @@ form:hover {
     overflow: hidden;
 
 }
-/* padding dos input */
+
+/* PADDING DOS INPUTS */
 .input{
     padding: 20px;
 }    
-/* Botão */
+
+/* BOTÕES ENVIAR E LIMPAR DADOS */
 .button{
     padding: 20px;
 }
-/* termos */
+
+/* CONTAINER DO ACEITE OS TERMOS */
 .termos{
     padding: 20px;
 }
-/* webkit */
+
+/* WEBKIT DO SCROLLBAR DA PÁGINA INTEIRA */
 ::-webkit-scrollbar {
     color: transparent;
 }
+
+/* TIRANDO A VISIBILIDADE DA SCROLLBAR DO INPUT DE NÚMERO */
 ::-webkit-scrollbar-button{
     visibility: hidden;
 }
+
+/* WEBKIT--INNER-SPIN-BUTTON INPUT DE NÚMERO */
 input[type=number]::-webkit-inner-spin-button { 
     -webkit-appearance: none;
     
 }
+
+/* INPUT DE NÚMERO */
 input[type=number] { 
    -moz-appearance: textfield;
    appearance: textfield;
