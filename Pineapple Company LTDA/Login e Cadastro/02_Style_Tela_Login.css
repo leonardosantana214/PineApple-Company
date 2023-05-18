@@ -146,3 +146,9 @@ body {
     transition: 1s;
     transform:translateX(1.2) scale(20px) ;
 }
+
+/* INPUT INVISÍVEL DO FOCUS */
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}

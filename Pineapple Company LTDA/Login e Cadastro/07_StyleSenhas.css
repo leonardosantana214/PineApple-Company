@@ -1,6 +1,10 @@
+
+/* FUNDO */
 body {
     background-color: white;
 }
+
+/* FORMULÁRIO */
 form {
     border: solid 15px #000;
     text-align: center;
@@ -12,37 +16,53 @@ form {
     transition: 2s;
     
 }
+
+/* INPUT DIV EMAIL */
 .a1 {
     color: violet;
 }
+
+/* HOVER DIV EMAIL */
 .a1:hover {
     color: #000;
 }
-.L1, .f1 {
+
+/* INSIVIBILIDADE INPUT EMAIL */
+.f1 {
     background-color: transparent;
 
 }
+
+/* HOVER FORMULÁRIO */
 form:hover {
     background-color: white;
     transition: 2s;
     box-shadow: 0px 0px 100px purple;
 }
+
+/* INPUT EMAIL */
 .f1{
     border: 1px solid violet;
     transition: 3s;
     border-radius: 50px;
     transition: 2s;
 }
+
+/* HOVER INPUT EMAIL */
 .f1:hover {
     color: purple;
     transition: 2s;
     box-shadow: inset 0 0 20px violet, 0 0 20px purple;
     border-color: purple;
 }
+
+/* WEBKIT INPUT PLACEHOLDER PAGINA GERAL */
 ::-webkit-input-placeholder {
     color: violet;
     font-family: monospace;
 }
+
+/* BOTÃO ENVIAR */
 .F2 {
     color: white;
     font-family: monospace;
@@ -53,6 +73,8 @@ form:hover {
     height: 40px;
     border-radius: 50px;
 }
+
+/* HOVER BOTÃO ENVIAR */
 .F2:hover {
     background-color: white;
     color: violet;
@@ -60,6 +82,8 @@ form:hover {
     transition: 1s;
     border: 2px solid violet;
 }
+
+/* ACTIVE BOTÃO ENVIAR */
 .F2:active{
     background-color: purple;
     color: white;

@@ -243,3 +243,9 @@ input[type=number] {
    appearance: textfield;
 
 }
+
+/* INPUT INVISÍVEL DO FOCUS */
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
