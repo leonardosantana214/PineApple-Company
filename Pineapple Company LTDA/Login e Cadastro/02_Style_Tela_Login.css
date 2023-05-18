@@ -1,3 +1,5 @@
+
+/* CSS FORMULÁRIO */
 form {
     margin: auto;
     margin-top: 5%;
@@ -10,12 +12,15 @@ form {
     transition: 3s;
     
 }
+
+/* HOVER FORMULÁRIO */
 form:hover{
     box-shadow: 0 0 50px violet, 0 0 70px violet;
     background-color: #fff ;
     transition: 1s;
 }
-/*bnt.Neon*/
+
+/* BOTÃO NEON */
 .bntneon {
     padding: 4px solid;
     border-radius: 50px;
@@ -38,6 +43,8 @@ form:hover{
 
 
 }
+
+/* BOTÃO NEON HOVER */
 .bntneon:hover{
     background-color: violet;
     border: 2px purple solid;
@@ -47,10 +54,14 @@ form:hover{
     
 
 }
+
+/* ACTIVE BOTÃO NEON */
 .bntneon:active{
     color: violet;
     background: purple;
 }
+
+/* CSS EMAIL E SENHA TAG P */
 .email, .senha {
     margin: 10%;
     font-family:monospace;
@@ -58,6 +69,8 @@ form:hover{
     font-size: x-large;
 
 }
+
+/* FUNDO */
 body {
     background-color: #fff;
     background-size: auto;
@@ -67,6 +80,8 @@ body {
     
 
 }
+
+/* TÍTULO FORMULÁRIO */
 .title {
     color: black;
     
@@ -79,6 +94,7 @@ body {
 
 }
 
+/* CSS INPUT EMAIL E SENHA */
 .Mail, .Password {
     background-color: transparent;
     color: black;
@@ -88,34 +104,43 @@ body {
     height: 30px;
     width: 300px;
 }
+
+/* HOVER INPUT EMAIL E SENHA */
 .Mail:hover, .Password:hover{
     border: 2px solid blueviolet;
     box-shadow: inset 0 0 30px violet , 0 0 20px purple;
     transition: 1s;
     
 }
+
+/* HOVER TAG P EMAIL E SENHA */
 .email:hover, .senha:hover {
     color: black ;
 }
+
+/* CSS LINK ESQUECEU A SENHA */
 .f1{
     color: blueviolet;
     margin: 100px;
     font-family: monospace;
 }
+
+/* CSS LINK CRIAR CONTA */
 .conta{
    margin: 100px;
    color: blueviolet;
    font-family: monospace;
    transform: translateX(0) scale(0.5);
 }
+
+/* WEBKIT PLACEHOLDER INPUT GERAL */
 ::-webkit-input-placeholder {
     color: purple;
     font-family: monospace;
     text-align: center;
 }
-::-webkit-validation-bubble-text-block-form{
-    animation: forwards infinite infinite infinite alternate both;
-}
+
+/* HOVER LINKS "ESQUECEU A SENHA" E "CRIAR CONTA" */
 .conta:hover, .f1:hover, .conta:focus, .f1:focus {
     color: violet;
     transition: 1s;
