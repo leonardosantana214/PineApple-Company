@@ -85,9 +85,7 @@ form:hover{
     border: 2px #9747FF solid;
     color: white;
     box-shadow: 0 0 5px #9747FF, 0 0 20px #9747FF, 0 0 35px #9747FF;
-    transition: 0.5s;
     
-
 }
 
 /* ACTIVE BOTÃO NEON */
@@ -149,10 +147,10 @@ body {
 
 /* VÁLIDO E INVÁLIDO BORDER */
 .Mail:valid, .Password:valid{
-    border-color:#9747FF;
-    border-top: solid 1px #9747FF;
-    border-right: solid 1px #9747FF;
-    border-left: solid 1px #9747FF;
+    border-color:#00EF43;
+    border-top: solid 3px #00EF43;
+    border-right: solid 3px #00EF43;
+    border-left: solid 3px #00EF43;
     border-radius: 50px;
     transition: 1s;
     
@@ -178,9 +176,8 @@ body {
 }
 
 /* HOVER LINKS "ESQUECEU A SENHA" E "CRIAR CONTA" */
-.conta:hover, .f1:hover, .conta:focus, .f1:focus {
-    color: #9747FF;
-    transition: 1s;
+.conta:hover, .esqueceu_senha:hover, .conta:focus, .esqueceu_senha:focus {
+    color: #000;
     transform:translateX(1.2) scale(20px) ;
 }
 

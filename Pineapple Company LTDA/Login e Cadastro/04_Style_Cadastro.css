@@ -5,6 +5,8 @@ body{
 }
 .F1 {
     color: #000;
+    display: flex;
+    justify-content: center;
 }
 .Texto{
     size: 100px;
@@ -23,12 +25,12 @@ body {
 }
 .F2, .f4, .F3, .F5, .feminino, .Masculino, .nãobinario, .Generos, .A1, .T6, .Data, .estado, .T7, .T10, .t2, .numero{
     font-size: large;
-    color: #9747FF;
+    color: #000;
     background-color: transparent;
 }
-.F2:hover, .f4:hover, .F3:hover, .F5:hover, .feminino:hover, .Masculino:hover, .nãobinario:hover, .Generos:hover, .A1:hover, .T6:hover, .Data:hover, .T7:hover, .T10:hover, .numero:hover {
+.F2:hover, .f4:hover, .F3:hover, .F5:hover, .feminino:hover, .Masculino:hover, .nãobinario:hover, .Generos:hover, .A1:hover, .T6:hover, .Data:hover, .T7:hover, .numero:hover {
     font-size: large;
-    color: black;
+    color: #9747FF;
     background-color: transparent;
     
 }
@@ -44,56 +46,46 @@ body {
 }
 
 form {
-    margin-left: 0px;
-    padding: 20px;
-    padding-left: 10px;
-    padding-top: 3px;
-    box-sizing: border-box;
-    border: #000 3px solid;
-    border-width: 30px;
-    background-color: #9747FF ;
-    background-size: 200%;
-    transition: 3s;
-    margin-top: -380px;
+    border: solid 10px #000;
+    position: relative;
+    bottom: 400px;
+    margin: auto;
+    padding: 60px;
+    width: 400px;
+    padding-top: 40px;
+    background-color: white;
+    transition: 1s;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
 }
 
 form:hover {
     box-shadow: 0 0 100px #9747FF;
-    box-sizing: border-box;
-    background-color: #fff;
     background-size: 200%;
     background-repeat: no-repeat;
-    border: #000 3px solid;
-    border-width: 30px;
     transition: 1s;
 
     opacity: 0,6;
 }
 
-.t4 {
-    background-color: transparent;
-    border: red solid 1px;
-    color: red;
-    border-radius: 50px;
-}
-.t4:hover {
-    background-color: red;
-    color: #fff;
-    box-shadow: 0 0 20px red, 0 0 10px red;
-    
-}
-
 .t3 {
-    background-color: transparent;
-    color: aqua;
-    border: 1px aqua solid;
-    input-security: auto;
-    border-radius: 50px;
+        color: white;
+        font-family: monospace;
+        background-color: black;
+        transition: 1s;
+        width: 100px;
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        display: flex;
+        align-items: center;
 }
 .t3:hover {
-    background-color: aqua;
-    color:#fff;
-    box-shadow: 0 0 20px aqua, 0 0 10px aqua;
+    background-color: #9747FF;
+    color: white;
+    transition: 1s;
 }
 .Rua {
     width: 5%;
@@ -312,23 +304,23 @@ form:hover {
     outline-width: 2px;
     transition: all 1s;
 }
-/* invalid e Valid */
-.rua:invalid, .Nome:invalid, .vila:invalid, .city:invalid, .Texto:invalid, .estado:invalid, .nascimento:invalid, .C1:invalid, .C2:invalid, .C3:invalid, .feminino:invalid, .Data:invalid, .estado:invalid, .Rua:invalid{
-    color:red;
-    outline-color:red ;
-}
-.rua:valid, .Nome:valid, .vila:valid, .city:valid, .Texto:valid, .estado:valid, .nascimento:valid, .C1:valid, .C2:valid, .C3:valid, .feminino:valid, .Data:valid, .estado:valid, .Rua:valid{
-    color:green;
-    outline-color:green ;
-}
 /* linhas dos input */
 .rua, .Nome, .vila, .city, .Texto, .estado, .nascimento, .C1, .C2, .C3, .feminino, .Data, .estado {
-    border-bottom: solid gray 1px;
-    width: 260px;
+    border: 1px solid #000;
     border-top: none;
     border-left: none;
     border-right: none;
-    background-color: transparent;
+    transition: 1s;
+    transition: 1s;
+    font-size: 20px;
+}
+.rua:hover, .Nome:hover, .vila:hover, .city:hover, .Texto:hover, .estado:hover, .nascimento:hover, .C1:hover, .C2:hover, .C3:hover, .feminino:hover, .Data:hover, .estado:hover {
+    color: #9747FF;
+    transition: 1s;
+    border-color: #9747FF;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
 .number{
     width: 20px;
@@ -368,3 +360,11 @@ input[type=number] {
     text-align: center;
     display: flex;
 }
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+.t2:hover{
+    color: #9747FF;
+}
+/* css novo */
