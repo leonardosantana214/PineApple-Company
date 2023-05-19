@@ -10,49 +10,53 @@
 
 </head>
 <body onload="">
-
-    <div id="loading" style="display: block">
-       <img src="img/gifs-com-loop-infinito-13.gif" class="preloader" alt="">
+    <!-- TELA DE CARREGAMENTO TELA 1 -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
     </div>
-    <div id="content" style="display: none">
+    <!-- TELA DE CARREGAMENTO TELA 2 FADE -->
+    <div class="segunda">
+
+    </div>
+    <div id="content">
         
     
     
     
-         <!-- Informações -->
-       <form action="cadastro realizados/cadastro realizado.html" method="post">
-       <!-- cadastro -->
+         <!-- INFORMAÇÕES -->
+       <form action="cadastro realizados/cadastro realizado.html" method="post" id="formulario">
+       <!-- CADASTRO -->
        <div class="cadastro">
         
             <h1 class="F1">Cadastro</h1>
-            <!-- nome -->
+            <!-- NOME -->
             <div class="input">
             <div class="F2">Nome <br><input type="" name="nome" class="Nome" autocomplete="off" id="o2" required > </div>
             </div>
-            <!-- endereço -->
+            <!-- ENDEREÇO -->
             <span class="F3">Endereço <br> <input type="text" name="endereço" id="" class="rua" autocomplete="off" id="o2" required></span><span class="numero"> Nª 
             <input      type="number" name="endereço" id="" class="number" maxlength="7" id="o2" required></span>
             <div class="input">
-            <!-- bairro -->
+            <!-- BAIRRO -->
             <p class="f4">Bairro <br> <input type="text" name="Bairro" id="" class="vila"autocomplete="off" id="o2"required></p>
             </div>
             <div class="input">
-            <!-- cidade -->
+            <!-- CIDADES -->
             <p class="F5">Cidade <br> <input type="text" name="cidade" class="city"autocomplete="off" id="o2"required></p>
             </div>
             <div class="input">
-            <!-- email -->
+            <!-- EMAIL -->
             <div class="A1"> e-mail</div>
             <input type="email" class="Texto"autocomplete="off" id="o2" required> <br>
             </div>
             <div class="input">
-            <!-- senha -->
+            <!-- SENHAS -->
             <div class="A1"> Senha</div>
             <input type="password" class="Texto"autocomplete="off"id="o2" required> <br>
             </div>
             <div class="input">
                </div>
-                <!-- Perguntas -->
+                <!-- PERGUNTAS (GENEROS, TERMO, E ESTADOS) -->
                 <br>
             <div class="Generos"> Escolha o seu Genêro </div>
         <select name="generos" id="" class="feminino" id="o2" required>
@@ -64,14 +68,14 @@
          </div>
              <div class="input">
             
-            <!-- nascimento -->
+            <!-- DATA DE NASCIMENTO -->
             <div class="input">
             <div class="T6">Data de Nascimento:</div>
         <span><input type="date" value="Manhã" id="idade" class="Data" id="o2" required></span><br>
         </div>
 
     </div>
-        <!-- estados -->
+        <!-- ESTADOS -->
             <div class="input">
             <div class="T7">Escolha o estado: <br>
             <select class="estado"required> <option value="estados">-- -- </option>
@@ -113,7 +117,7 @@
            <div class="button"> <button class="t3">Enviar dados</button> <button class="t4" type="reset">Limpar os campos</button></div>
             
             </form>
-
-        </div>
+         </div>
+    </div>
 </body>
 </html>
