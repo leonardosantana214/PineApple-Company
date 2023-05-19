@@ -1,13 +1,195 @@
+/* FONT FAMILY GERAL */
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* RESET CONFIGURAÇÕES PÁGINA */
 *{
     margin: 0;
     padding:0;
 }
 
-/* HEADER  */
-header nav {
-    height: 150px;
-    width:100vw;
+/* HEADER */
+header{
+    height:130px;
     background-color: black;
 
+}
+
+/* MAIN DA PRIMEIRA METADE DA PAGINA */
+main{
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* SECTION DOS ÂNGULOS DAS CHUTEIRAS */
+.section_1{
+    display: flex;
+    flex-direction: column;
+}
+
+/* ÂNGULOS DA CHUTEIRA */
+.chuteira_side{
+    height: 120px;
+    width:150px;
+    background-color: #d9d9d9;
+    margin-bottom: 30px;
+}
+
+.img_side{
+    height:120px;
+    width:150px;
+}
+
+/* SECTION CHUTEIRA PRINCIPAL */
+.section_2{
+    margin-left:40px;
+}
+
+
+
+/* DIV CHUTEIRA PRINCIPAL */
+.chuteira_principal{
+    background-color: #d9d9d9;
+    height:510px;
+    width: 750px;
+
+}
+
+/* IMAGEM DA CHUTEIRA PRINCIPAL */
+.img_principal{
+    height:510px;
+    width:750px;
+}
+/* SELECT TAMANHO */
+select{
+    height:40px;
+    width:150px;
+    border-color: darkslategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Inria Serif;
+}
+
+/* TAMANHO E QUANTIA */
+.inputs_sec_2{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    
+}
+
+/* MARGEM TAMANHO */
+.tamanho{
+    margin-right: 30px;
+}
+/* MARGEM QUANTIA */
+.quantia{
+    margin-left: 30px;
+}
+/* SECTION COM INFORMAÇÕES, CARRINHO E DADOS */
+.section_3{
+    margin-top:100px;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+}
+/* TEXTO DA PROMOÇÃO */
+h1{
+    font-size:40px;
+}
+
+/* PREÇO */
+.preco{
+    font-size: 70px;;
+}
+
+/* TEXTO DE DESCONTO EM CIMA DO PREÇO */
+h6{
+    display: flex;
+    margin-left: 240px;
+}
+
+/* PARCELAS */
+.sem_juros{
+    font-family: Inria Serif;
+    color:#A5A2A2;
+    font-weight: bolder;
+    margin:20px;
+    margin-left: 0;
+}
+/* BOTÃO DE ADICIONAR AO CARRINHO */
+.adicionar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    font-family: Inria Serif;
+    font-size:25px;
+    font-weight: bolder;
+    color:#fff;
+    height: 80px;
+    width: 60%;
+    align-self: center;
+}   
+
+/* CONTAINER GERAL DO CEP E ENVIAR */
+.container_cep_enviar{
+    padding: 20px;
+    display: flex;
+    margin-top: 60px;
+}
+
+/* CONTAINER INPUT CEP */
+.container_cep{
+    font-family: Inria Serif;
+    font-size:10px;
+    
+}
+
+/* INPUT CEP */
+.cep{
+    height:40px;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    width:150px;
+    font-size:20px;
+    font-family: Inria serif;
+    font-weight: bold;
+}
+
+.cep,::-webkit-input-placeholder{
+    font-size: 20px;
+    align-items: center;
+    vertical-align: middle;
+    line-height: normal;
+    display: flex;
+    padding-top:1px;
+    margin-left: 0px;
+}
+
+
+/* DIV ENVIAR */
+.enviar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color:#fff;
+    font-family: Inria Serif;
+    height: 45px;
+    width: 100px;
+    margin-top: 12px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* LINHA DE DIVISÃO DO PRODUTO PARA AS OFERTAS */
+hr{
+    width:90%;
+    display: flex;
+    position: relative;
+    left: 5%;
 }
