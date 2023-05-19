@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="Java Script/JavadoCadastro.js"></script>
+        <title>Cadastro</title>
+        <link rel="stylesheet" href="04_Style_Cadastro.css">
+
+    </head>
+    <body onload="">
+
+        <div id="loading" style="display: block">
+            <img src="img/gifs-com-loop-infinito-13.gif" class="preloader" alt="">
+        </div>
+
+        <div id="content" style="display: none">
+
+            <!-- INFORMAÇÕES -->
+        
+            <form action="cadastro realizados/cadastro realizado.html" method="post">
+
+                <!-- CADASTRO -->
+                <div class="cadastro">
+                    
+                    <h1 class="F1">Cadastro</h1>
+
+                    <!-- NOME -->
+                    <div class="input">
+                        <div class="F2">Nome 
+                            <br>
+                            <input type="" name="nome" class="Nome" autocomplete="off" id="o2" required>
+                        </div>
+                    </div>
+
+                    <!-- ENDEREÇO -->
+                    <span class="F3">
+                        Endereço 
+                        <br> 
+                        <input type="text" name="endereço" id="" class="rua" autocomplete="off" id="o2" required>
+                    <span>
+
+                    <span class="numero">
+                         Nª 
+                        <input type="number" name="endereço" id="" class="number" maxlength="7" id="o2" required>
+                    </span>
+
+                    <!-- BAIRRO -->
+                    <div class="input">
+                        <p class="f4">
+                            Bairro 
+                            <br> 
+                            <input type="text" name="Bairro" id="" class="vila"autocomplete="off" id="o2"required>
+                        </p>
+                    </div>
+
+                    <!-- CIDADE -->
+                    <div class="input">
+                        <p class="F5">
+                            Cidade 
+                            <br> 
+                            <input type="text" name="cidade" class="city"autocomplete="off" id="o2"required>
+                        </p>
+                    </div>
+
+                    <!-- EMAIL -->
+                    <div class="input">
+                        <div class="A1"> 
+                            E-mail
+                        </div>
+
+                        <input type="email" class="Texto"autocomplete="off" id="o2" required> 
+                        <br>
+                    </div>
+
+                    <!-- SENHA -->
+                    <div class="input">
+                        <div class="A1">
+                            Senha
+                        </div>
+                        <input type="password" class="Texto"autocomplete="off"id="o2" required> <br>
+                    </div>
+                    
+                    <!-- PERGUNTAS -->
+                    <div class="input">
+                        <br>
+                        <div class="Generos"> Escolha o seu Genêro</div>
+                        <select name="generos" id="" class="feminino" id="o2" required>
+                            <option value="">-- --</option>
+                            <option value="">Feminino</option>
+                            <option value="">Masculino</option>
+                             <option value="">Não-Binario</option>
+                        </select>
+                    </div>
+
+                    <!-- MASCIMENTO -->
+                    <div class="input">
+                        <div class="input">
+                            <div class="T6">Data de Nascimento:</div>
+                            <span>
+                                <input type="date" value="Manhã" id="idade" class="Data" id="o2" required>
+                            </span>
+                            <br>
+                        </div>
+                    </div>
+
+                    <!-- ESTADOS -->
+                    <div class="input">
+                        <div class="T7">Escolha o estado: 
+                            <br>
+                            <select class="estado"required> 
+                                <option value="estados">-- -- </option>
+                                <option value="estados">Acre </option>
+                                <option value=""> Alagoas</option>
+                                <option value="">Amapá</option>
+                                <option value="">Amazonas</option>
+                                <option value="">Bahia</option>
+                                <option value="">Ceará</option>
+                                <option value="">Distrito Federal</option>
+                                <option value="">Espírito Santo</option>
+                                <option value="">Goiás</option>
+                                <option value="">Maranhão</option>
+                                <option value="">Mato Grosso</option>
+                                <option value="">Mato Grosso do Sul</option>
+                                <option value="">Minas Gerais</option>
+                                <option value="">Pará</option>
+                                <option value="">Paraíba</option>
+                                <option value="">Paraná</option>
+                                <option value="">Pernambuco</option>
+                                <option value="">Piauí</option>
+                                <option value="">Rio de Janeiro</option>
+                                <option value="">Rio Grande do Norte</option>
+                                <option value="">Rio Grande do Sul</option>
+                                <option value="">Rondônia</option>
+                                <option value="">Roraima</option>
+                                <option value="">Santa Catarina</option>
+                                <option value="">São Paulo</option>
+                                <option value="">Sergipe</option>
+                                <option value="">Tocantins</option>
+                            </select>
+                        </div>
+                    </div>
+                        
+                    <br>
+                    <div class="termos">
+                        <span>
+                            <input type="checkbox" name="aceita os usos" class="t1" id="o1" required> 
+                        </span>
+                        <span class="T10">
+                            Aceita os <a href="Termos\Termos.html" class="t2">Termos</a> de uso do site
+                        </span>
+                        <br>
+                    </div>
+                    <div class="button">
+                        <button class="t3">Enviar dados</button> 
+                        <button class="t4" type="reset">Limpar os campos</button>
+                    </div>           
+            </form>
+        </div>
+    </body>
+</html>
