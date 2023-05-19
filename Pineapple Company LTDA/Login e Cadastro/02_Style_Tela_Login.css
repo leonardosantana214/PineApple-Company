@@ -1,55 +1,90 @@
+/* FONT DO SITE MONOMANIAC ONE */
+@font-face {
+    font-family: Monomaniac One;
+    src: url(monomaniac-one-regular.ttf);
+} 
+
+/* CONFIGURAÇAO GERAL PAGINA */
+*{
+    margin: 0;
+}
+
+/* CONTAINER FAIXA PINE_SPORTS */
+header nav .faixa_pine{
+    height:120px;
+    width:100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+/* LOGOTIPO */
+.pineapple{
+    margin-left:30px;
+    height:80px;
+    width:80px;
+}
+
+/* PINE_SPORTS */
+.pine_sports{
+    font-family: Monomaniac One;
+    font-size:40px;
+    color:white;
+    letter-spacing: 2px;
+    margin-left: 15px;
+    
+}
+
+
 
 /* CSS FORMULÁRIO */
 form {
     margin: auto;
     margin-top: 5%;
-    background-color: violet;
-    border: solid 15px black;
+    border: solid 25px black;
     text-align: center;
-    height: 400px;
+    height: 500px;
     width: 500px;
-    color: purple;
-    transition: 3s;
+    color: #9747FF;
+    transition: 1s;
+    border-radius: 15px;
+    padding:0;
     
 }
 
 /* HOVER FORMULÁRIO */
 form:hover{
-    box-shadow: 0 0 50px violet, 0 0 70px violet;
+    box-shadow: 0 0 50px #9747FF, 0 0 70px #9747FF;
     background-color: #fff ;
-    transition: 1s;
 }
 
 /* BOTÃO NEON */
 .bntneon {
     padding: 4px solid;
-    border-radius: 50px;
+    border-radius: 15px;
     display: inline-block;
     position: relative;
-    margin: 60px;
-    color: violet;
-    font-family:monospace;
+    margin: 40px;
+    color: #fff;
+    font-family:Monomaniac One;
+    font-size:25px;
     text-decoration: none;
-    transition: 0,4s;
-    letter-spacing: 4px;
     overflow: hidden;
-    margin-right: 50px;
-    
     margin-top: 0px;
-    border: 2px solid violet;
+    border: 2px solid #000;
     height: 50px;
-    transition: 2s;
-    background-color: transparent;
+    width: 160px;
+    background-color: #000;
 
 
 }
 
 /* BOTÃO NEON HOVER */
 .bntneon:hover{
-    background-color: violet;
-    border: 2px purple solid;
+    background-color: #000;
+    border: 2px #9747FF solid;
     color: white;
-    box-shadow: 0 0 10px violet, 0 0 40px violet, 0 0 70px violet;
+    box-shadow: 0 0 5px #9747FF, 0 0 20px #9747FF, 0 0 35px #9747FF;
     transition: 0.5s;
     
 
@@ -57,17 +92,8 @@ form:hover{
 
 /* ACTIVE BOTÃO NEON */
 .bntneon:active{
-    color: violet;
-    background: purple;
-}
-
-/* CSS EMAIL E SENHA TAG P */
-.email, .senha {
-    margin: 10%;
-    font-family:monospace;
-    color: violet;
-    font-size: x-large;
-
+    color: #fff;
+    background: #9747FF;
 }
 
 /* FUNDO */
@@ -83,66 +109,77 @@ body {
 
 /* TÍTULO FORMULÁRIO */
 .title {
-    color: black;
-    
-    font-family: monospace;
-    font-size: 20px;
-    margin: auto;
+    color: #000;
+    font-family: Monomaniac One;
+    font-size: 36px;
+    margin-top 70px;
     text-align: center;
-    
     margin: center;
+    font-weight: lighter;
+    margin-top:30px;
+}
 
+/* CONTAINER INPUTS */
+.container{
+    padding:20px;
+    margin-top:40px;
 }
 
 /* CSS INPUT EMAIL E SENHA */
 .Mail, .Password {
+    padding: 10px;
+    padding-left: 20px;
     background-color: transparent;
     color: black;
-    font-family: 'Times New Roman', Times, serif;
-    border-color: black;
-    border-radius: 50px;
-    height: 30px;
-    width: 300px;
+    font-family: Monomaniac One;
+    font-size: 22px;
+    border-color: #A5A2A2;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 20px;
+    width: 90%;
+    margin-top: 20px;
 }
 
-/* HOVER INPUT EMAIL E SENHA */
-.Mail:hover, .Password:hover{
-    border: 2px solid blueviolet;
-    box-shadow: inset 0 0 30px violet , 0 0 20px purple;
+/* FOCUS PARA MUDAR A COR DA LINHA DIGITAÇÃO */
+.Mail:focus, .Password:focus{
+    border-color: #9747FF;
+}
+
+/* VÁLIDO E INVÁLIDO BORDER */
+.Mail:valid, .Password:valid{
+    border-color:#9747FF;
+    border-top: solid 1px #9747FF;
+    border-right: solid 1px #9747FF;
+    border-left: solid 1px #9747FF;
+    border-radius: 50px;
     transition: 1s;
     
 }
 
-/* HOVER TAG P EMAIL E SENHA */
-.email:hover, .senha:hover {
-    color: black ;
+/* CSS LINKs */
+.esqueceu_senha, .conta{
+    color: blue;
+    font-family: Monomaniac One;
+    font-size:20px;
 }
 
-/* CSS LINK ESQUECEU A SENHA */
-.f1{
-    color: blueviolet;
-    margin: 100px;
-    font-family: monospace;
-}
-
-/* CSS LINK CRIAR CONTA */
-.conta{
-   margin: 100px;
-   color: blueviolet;
-   font-family: monospace;
-   transform: translateX(0) scale(0.5);
+/* CONTAINER DOS LINKS */
+.container_link{
+    text-align: center;
 }
 
 /* WEBKIT PLACEHOLDER INPUT GERAL */
 ::-webkit-input-placeholder {
-    color: purple;
-    font-family: monospace;
-    text-align: center;
+    color:#A5A2A2;
+    font-family: Monomaniac One;
+    font-size: 22px;
 }
 
 /* HOVER LINKS "ESQUECEU A SENHA" E "CRIAR CONTA" */
 .conta:hover, .f1:hover, .conta:focus, .f1:focus {
-    color: violet;
+    color: #9747FF;
     transition: 1s;
     transform:translateX(1.2) scale(20px) ;
 }
