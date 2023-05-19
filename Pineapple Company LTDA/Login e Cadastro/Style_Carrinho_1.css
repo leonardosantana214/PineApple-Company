@@ -1,0 +1,13 @@
+/* RESET CONFIGURAÇÕES PÁGINA */
+*{
+    margin: 0;
+    padding:0;
+}
+
+/* HEADER  */
+header nav {
+    height: 150px;
+    width:100vw;
+    background-color: black;
+
+}
