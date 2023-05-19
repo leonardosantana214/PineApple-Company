@@ -1,9 +1,4 @@
-<<<<<<< Updated upstream:Pineapple Company LTDA/Login e Cadastro/07_StyleSenhas.css
-
-/* FUNDO */
-=======
 @import url('https://fonts.cdnfonts.com/css/monomaniac-one');
->>>>>>> Stashed changes:Pineapple Company LTDA/Login e Cadastro/styleSenhas.css
 body {
     background-color: #000;
     font-family: 'Monomaniac One', sans-serif;
@@ -126,4 +121,12 @@ h2{
 .Inputs{
     position: relative;
     bottom: 30px;
+}
+p{
+    font-size: 30px;
+}
+p2{
+    font-size: 25px;
+    position: relative;
+    bottom: 25px;
 }
