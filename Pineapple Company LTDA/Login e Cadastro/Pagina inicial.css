@@ -1,5 +1,94 @@
+/* FONTE DO SITE */
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* BORDA DO SITE */
+*{
+    margin: auto;
+}
+/* BODY DO SITE, FONTES E ETC */
+body{
+    font-family: 'Inria Serif', serif;
+}
+/* NAV, HEADER (MENU DO SITE) E A LOGO */
+header{
+    background-color: #000;
+    background-size:cover ;
+}
+/* IMAGEM DO HEADER E DO NAV */
+header img{
+    height:95px;
+    width: 95px;
+}
+nav img{
+    height: 40px;
+    width: 40px;
+}
+/*  ESPAÇAMENTO DO MENU*/
 nav a {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    padding:5px ;
+    
+}
+/* POSIÇÃO, COR E ESTILO DO NAV E DO HEADER */
+
+/* ESTILO E COR */
+nav a{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+}
+/* POSIÇÃO */
+nav a{
+    left: 700px ;
+    bottom: 50px;
+}
+/* POSIÇÃO DA IMAGEM */
+header img{
+    position: relative;
+    bottom: -15px;
+    left: 40px;
+}
+/* TAMANHO  */
+nav a {
+    font-size: 20px;
+}
+/* BANNER, VENDAS E IMAGENS(MAIN) */
+/* CONTAINER */
+/* BANNER */
+/* TAMANHO DO BANNER E ESTILO */
+main .content img{
+    width: 1517px;
+    height: 450px;
+    filter: saturate(190%);
+    border: solid black 10px;
+}
+
+/* POSIÇÃO E ESTILO DO TEXTO NO BANNER */
+main h1 {
+    position: absolute;
+    top: 420px;
+    left: 65px;
+    font-weight: bolder;
+}
+.content span{
+    position: absolute;
+    left: 100px;
+    top: 55px;
+}
+/* BOTÃO DO BANNER (ESTILO E POSIÇÃO) */
+main a {
+    text-decoration: none;
+    color: #fff;
+    border: solid black 1px;
+    background-color: #000;
+    padding: 10px;
+    font-size:xx-large ;
+    border-radius: 6px;
+    position: absolute;
+    top: 520px;
+    left: 130px;
+}
+/* ESPAÇAMENTO ENTRE OS CONTAINER */
+.espaco img{
+    height: 3px;
+    padding-left: 20px;
+    width: 1500px;
 }
