@@ -5,4 +5,4 @@ var i = setInterval(function () {
     document.getElementById("loader-wrapper").style.display = "none";
     document.getElementById("content").style.display = "block";
     
-}, 1000);
+}, 5000);
