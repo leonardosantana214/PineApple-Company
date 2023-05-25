@@ -30,15 +30,15 @@ main{
 
 /* ÂNGULOS DA CHUTEIRA */
 .chuteira_side{
-    height: 120px;
-    width:150px;
+    height: 100px;
+    width:130px;
     background-color: #d9d9d9;
     margin-bottom: 30px;
 }
 
 .img_side{
-    height:120px;
-    width:150px;
+    height:100px;
+    width:130px;
 }
 
 /* SECTION CHUTEIRA PRINCIPAL */
@@ -51,20 +51,20 @@ main{
 /* DIV CHUTEIRA PRINCIPAL */
 .chuteira_principal{
     background-color: #d9d9d9;
-    height:510px;
-    width: 750px;
+    height:410px;
+    width: 650px;
 
 }
 
 /* IMAGEM DA CHUTEIRA PRINCIPAL */
 .img_principal{
-    height:510px;
-    width:750px;
+    height:410px;
+    width:650px;
 }
 /* SELECT TAMANHO */
 select{
-    height:40px;
-    width:150px;
+    height:30px;
+    width:120px;
     border-color: darkslategray;
     display: flex;
     justify-content: center;
@@ -97,18 +97,18 @@ select{
 }
 /* TEXTO DA PROMOÇÃO */
 h1{
-    font-size:40px;
+    font-size:30px;
 }
 
 /* PREÇO */
 .preco{
-    font-size: 70px;;
+    font-size: 50px;
 }
 
 /* TEXTO DE DESCONTO EM CIMA DO PREÇO */
 h6{
     display: flex;
-    margin-left: 240px;
+    margin-left: 160px;
 }
 
 /* PARCELAS */
@@ -119,6 +119,7 @@ h6{
     margin:20px;
     margin-left: 0;
 }
+
 /* BOTÃO DE ADICIONAR AO CARRINHO */
 .adicionar{
     display: flex;
@@ -126,17 +127,17 @@ h6{
     align-items: center;
     background-color: #000;
     font-family: Inria Serif;
-    font-size:25px;
+    font-size:18px;
     font-weight: bolder;
     color:#fff;
-    height: 80px;
-    width: 60%;
+    height: 60px;
+    width: 50%;
     align-self: center;
 }   
 
 /* CONTAINER GERAL DO CEP E ENVIAR */
 .container_cep_enviar{
-    padding: 20px;
+    padding-top: 20px;
     display: flex;
     margin-top: 60px;
 }
@@ -150,11 +151,11 @@ h6{
 
 /* INPUT CEP */
 .cep{
-    height:40px;
+    height:30px;
     display: flex;
     align-items: center;
     margin-right: 30px;
-    width:150px;
+    width:120px;
     font-size:20px;
     font-family: Inria serif;
     font-weight: bold;
@@ -179,10 +180,10 @@ h6{
     background-color: #000;
     color:#fff;
     font-family: Inria Serif;
-    height: 45px;
-    width: 100px;
+    height: 35px;
+    width: 80px;
     margin-top: 12px;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
 }
 
@@ -192,4 +193,21 @@ hr{
     display: flex;
     position: relative;
     left: 5%;
+}
+
+/* MAIN */
+.main_oferta{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titulo_2{
+    text-align: center;
+}
+
+.oferta{
+    height:300px;
+    width: 150px;
+
 }
