@@ -1,9 +1,7 @@
-/* FONT DO SITE MONOMANIAC ONE */
-@font-face {
-    font-family: Monomaniac One;
-    src: url(monomaniac-one-regular.ttf);
-} 
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
 /* CONFIGURAÇAO GERAL PAGINA */
 *{
     margin: 0;

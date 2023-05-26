@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 body {
-    background-color: #000;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -12,11 +11,11 @@ form {
     bottom: -75px;
     margin: auto;
     padding: 60px;
-    width: 400px;
+    width: 300px;
     padding-top: 40px;
     background-color: white;
     transition: 1s;
-    height: 400px;
+    height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,6 +27,7 @@ form {
 .a1 {
     color: black;
     transition: 1s;
+    font: 15px;
 }
 
 /* HOVER DIV EMAIL */
@@ -47,7 +47,7 @@ form:hover {
     background-color: white;
     transition: 1s;
     transform: scale(1.1) translateY(-10px);
-    box-shadow: 0px 0px 500px #9747FF;
+    box-shadow: 0px 0px 50px #9747FF;
 }
 
 /* INPUT EMAIL */
@@ -86,7 +86,7 @@ form:hover {
     font-family: monospace;
     background-color: black;
     transition: 1s;
-    width: 100px;
+    width: 140px;
     height: 50px;
     border-radius: 10px;
     border: none;
@@ -102,7 +102,7 @@ form:hover {
 
 /* ACTIVE BOTÃO ENVIAR */
 .F2:active{
-    background-color: purple;
+    background-color: #9747FF;
     color: white;
 }
 .texto{
@@ -125,8 +125,14 @@ h2{
 p{
     font-size: 30px;
 }
-p2{
-    font-size: 25px;
-    position: relative;
-    bottom: 25px;
+.pagamento i{
+    size: 15px;
+    height: 50px;
+    width: 50px;
+
+}
+.pagamento i:hover {
+    color: #9747FF;
+    transition: all 0.5s;
+    transform: scale(1.5)
 }
