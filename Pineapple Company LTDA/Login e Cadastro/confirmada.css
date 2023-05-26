@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.text{
+    border: solid 10px #000;
+    text-align: center;
+    position: relative;
+    bottom: -75px;
+    margin: auto;
+    padding: 60px;
+    width: 400px;
+    padding-top: 40px;
+    background-color: white;
+    transition: 1s;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.text:hover{
+    background-color: white;
+    transition: 1s;
+    transform: scale(1.1) translateY(-10px);
+    box-shadow: 0px 0px 50px #9747FF;
+}
+
+.home {
+    color: white;
+    font-family: monospace;
+    background-color: black;
+    transition: 1s;
+    width: 75px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.home:hover {
+    background-color: #9747FF;
+    color: white;
+    transition: 1s;
+
+}
+.confirmada{
+    font-size: 25px;
+}
+.sucesso{
+    font-size: 20px;
+}
+.check{
+    font-size: 105px;
+    background-color: green;
+    padding: 10px;
+    border-radius: 150px;
+    color: #ffffff;
+    height: 150px;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0px;
+}
