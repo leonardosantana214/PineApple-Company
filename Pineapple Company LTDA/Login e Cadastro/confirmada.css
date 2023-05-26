@@ -68,3 +68,147 @@ body {
     position: relative;
     top: 0px;
 }
+:root{
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #171717;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+main{
+    height: 80vh;
+}
+footer{
+    width: 100%;
+    color: var(--color-neutral-40);
+    text-decoration: none;
+    display: flex;
+    
+}
+.footer-link{
+    text-decoration: none;
+
+}
+
+#footer_content{
+    background-color: var(--color-neutral-10);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 3rem 3.5rem ;
+}
+#footer_contacts h1{
+    margin-bottom: 0.75rem;
+}
+#footer_social_midia{
+    display: flex;
+}
+
+#footer_social_media{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+    transition: all 0.4s;
+
+}
+
+##footer_social_media .footer_link i{
+    font-size: 1.25rem;
+
+}
+#footer_social_media .footer_link :hover{
+    opacity: 0.8;
+}
+
+#pineapple{
+    background-color: #ff2992;
+}
+
+#instagram{
+    background: linear-gradient(#7f37c9, #ff2992,#ff9807);
+   
+}
+
+#whatsapp{
+    background-color: #13be1b;
+}
+#twitter{
+    background-color: rgb(0, 157, 255);
+}
+.footer_list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+.footer_list .footer_link{
+    color: var(--color-neutral-30);
+    transition: all 0.4s;
+}
+.footer_list .footer_link:hover {
+    color: #7f37c9;
+}
+
+#footer_subscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+#footer_subscribe p{
+    color: var(--color-neutral-30); 
+
+}
+#footer_subscribe p:hover {
+    color: #7f37c9;
+}
+
+.input_group{
+    display: flex;
+    align-items: center;
+    background-color: var(--color-neutral-0);
+    border-radius: 4px;
+}
+.input_group input{
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+.input_group button{
+    background-color: #7f37c9;
+    color: var(--color-neutral-40);
+    border: none;
+    font-size: 1.125rem;
+    padding: 0px 1.12rem;
+    height: 100%;
+    border-radius:  0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+
+}
+.input_group button :hover{
+    opacity: 0.8;}
+#footer_copyright{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-neutral-0);
+    font-size: 0.9;
+    padding: 1.5rem;
+    font-weight: 100;
+}
