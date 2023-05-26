@@ -1,5 +1,17 @@
 /* FONT FAMILY GERAL */
-@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* @import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Poppins:ital,wght@1,300&display=swap); */
+
+:root{
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #171717;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+}
 
 /* RESET CONFIGURAÇÕES PÁGINA */
 *{
@@ -14,200 +26,320 @@ header{
 
 }
 
-/* MAIN DA PRIMEIRA METADE DA PAGINA */
-main{
-    padding: 80px;
+/* CONTAINER DA PRIMEIRA METADE DA TELA */
+#container_primario{
     display: flex;
     justify-content: center;
-    
+    padding: 50px;
+    align-items: center;
+    height: 500px;
+    gap:50px;
 }
-
-/* SECTION DOS ÂNGULOS DAS CHUTEIRAS */
-.section_1{
+/* SECTION COLUNA SIDE */
+#coluna_side{
     display: flex;
     flex-direction: column;
+    gap:30px;
+    height:400px;
+    width: 150px;
+    margin-bottom:75px;
 }
 
-/* ÂNGULOS DA CHUTEIRA */
-.chuteira_side{
-    height: 100px;
-    width:130px;
-    background-color: #d9d9d9;
-    margin-bottom: 30px;
+/* IMAGEM DOS ANGULOS DAS CHUTEIRAS */
+.div_side{
+    height: 100%;
+    width:100%;
 }
 
+/* IMAGEM DOS ANGULOS DAS CHUTEIRAS */
 .img_side{
-    height:100px;
-    width:130px;
+    height:100%;
+    width:100%;
 }
 
-/* SECTION CHUTEIRA PRINCIPAL */
-.section_2{
-    margin-left:40px;
-}
-
-
-
-/* DIV CHUTEIRA PRINCIPAL */
-.chuteira_principal{
-    background-color: #d9d9d9;
-    height:410px;
-    width: 650px;
-
-}
-
-/* IMAGEM DA CHUTEIRA PRINCIPAL */
-.img_principal{
-    height:410px;
-    width:650px;
-}
-/* SELECT TAMANHO */
-select{
-    height:30px;
-    width:120px;
-    border-color: darkslategray;
+/* DIV COM IMAGEM PRINCIPAL */
+.principal{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Inria Serif;
+    flex-direction: column;
+    gap: 50px;
+    height:400px;
+    width:600px;
 }
 
-/* TAMANHO E QUANTIA */
-.inputs_sec_2{
+/* IMAGEM PRINCIPAL */
+.div_img_principal{
+    height:100%;
+    width:100%;
+}
+
+#img_principal{
+    height: 100%;
+    width: 100%;
+}
+
+/* DIV INPUTS DE TAMANHO E QUANTIA */
+.inputs{
     display: flex;
     justify-content: center;
-    margin: 20px;
+    gap:70px;
+}
+
+/* CONFIG TAMANHO */
+#tamanho{
+    height: 30px;
+    width:150px;
+
+}
+/* PLACEHOLDER E ESCRITA DA QUANTIA */
+#quantia{
+    display: flex;
+    align-items: center;
+    padding:5px;
+    width: 150px;
     
 }
 
-/* MARGEM TAMANHO */
-.tamanho{
-    margin-right: 30px;
-}
-/* MARGEM QUANTIA */
-.quantia{
-    margin-left: 30px;
-}
-/* SECTION COM INFORMAÇÕES, CARRINHO E DADOS */
-.section_3{
-    margin-top:100px;
-    margin-left: 80px;
+.texto{
     display: flex;
+    justify-content: center;
     flex-direction: column;
 }
-/* TEXTO DA PROMOÇÃO */
-h1{
-    font-size:30px;
+/* TEXTO DE INFORMAÇÕES SOBRE A CHUTEIRA PRINCIPAL */
+.nome_chuteira{
+    font-weight: bold;
+     font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+}
+
+/* DESCONTO */
+.desconto{
+    margin-left: 130px;
 }
 
 /* PREÇO */
 .preco{
-    font-size: 50px;
+    font-weight: bolder;
+     font-family: 'Poppins', sans-serif;
+    font-size: 50px; 
 }
 
-/* TEXTO DE DESCONTO EM CIMA DO PREÇO */
-h6{
-    display: flex;
-    margin-left: 160px;
-}
-
-/* PARCELAS */
+/* SEM JUROS */
 .sem_juros{
-    font-family: Inria Serif;
-    color:#A5A2A2;
-    font-weight: bolder;
-    margin:20px;
-    margin-left: 0;
+    color: var(--color-neutral-30);
+    font-weight: bold;
+
 }
 
-/* BOTÃO DE ADICIONAR AO CARRINHO */
+/* BOTÃO DE ADICIONAR */
 .adicionar{
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #000;
-    font-family: Inria Serif;
-    font-size:18px;
+    color: #fff;
     font-weight: bolder;
-    color:#fff;
-    height: 60px;
-    width: 50%;
-    align-self: center;
-}   
-
-/* CONTAINER GERAL DO CEP E ENVIAR */
-.container_cep_enviar{
-    padding-top: 20px;
-    display: flex;
-    margin-top: 60px;
-}
-
-/* CONTAINER INPUT CEP */
-.container_cep{
-    font-family: Inria Serif;
-    font-size:10px;
-    
-}
-
-/* INPUT CEP */
-.cep{
-    height:30px;
-    display: flex;
-    align-items: center;
-    margin-right: 30px;
-    width:120px;
+    padding:20px;
+    height:20px;
+    width:230px;
     font-size:20px;
-    font-family: Inria serif;
-    font-weight: bold;
 }
 
-.cep,::-webkit-input-placeholder{
-    font-size: 20px;
-    align-items: center;
-    vertical-align: middle;
-    line-height: normal;
+/* CONTAINER CEP ENVIAR */
+.cep_enviar{
     display: flex;
-    padding-top:1px;
-    margin-left: 0px;
+    gap:50px;
 }
 
+/* TEXTO CEP */
+.texto_cep{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size:16px;
+     font-family: 'Poppins', sans-serif;
+}
+/* CEP */
+#cep{
+    padding-left: 5px;
+    height:40px;
+    width: 150px;
 
-/* DIV ENVIAR */
-.enviar{
+}
+
+/* ENVIAR */
+#enviar{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #000;
-    color:#fff;
-    font-family: Inria Serif;
-    height: 35px;
-    width: 80px;
-    margin-top: 12px;
-    font-size: 15px;
-    font-weight: bold;
+    color: #fff;
+    font-weight: bolder;
+    font-size:19px;
+    height:45px;
+    width:120px;
+    margin-top:22px;
 }
 
-/* LINHA DE DIVISÃO DO PRODUTO PARA AS OFERTAS */
-hr{
-    width:90%;
-    display: flex;
-    position: relative;
-    left: 5%;
+/* DIVISÃO DE TELA */
+.meia_tela{
+    width:84vw;
+    margin: auto;
 }
 
-/* MAIN */
-.main_oferta{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.titulo_2{
+/* TITULO SECUNDARIO */
+#titulo_secundario{
+     font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size:45px;
+    margin: auto;
     text-align: center;
 }
 
-.oferta{
-    height:300px;
-    width: 150px;
+/* CONTAINER GERAL SECUNDÁRIO DAS CHUTEIRAS EM OFERTA */
+.secundaria{
+    display: flex;
+    justify-content: center;
+    gap:100px;
+    padding:100px;
+}
 
+/* CHUTERIAS */
+.chuteira{
+    font-weight: 700;
+
+}
+
+
+.preco_secundario{
+    text-align: center;
+}
+
+/* FOOTER */
+footer{
+    width: 100%;
+    color: var(--color-neutral-40);
+    text-decoration: none;
+
+}
+.footer-link{
+    text-decoration: none;
+
+}
+
+#footer_content{
+    background-color: var(--color-neutral-10);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 3rem 3.5rem ;
+}
+#footer_contacts h1{
+    margin-bottom: 0.75rem;
+}
+#footer_social_midia{
+    display: flex;
+}
+
+#footer_social_media{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+    transition: all 0.4s;
+
+}
+
+##footer_social_media .footer_link i{
+    font-size: 1.25rem;
+
+}
+#footer_social_media .footer_link :hover{
+    opacity: 0.8;
+}
+
+#pineapple{
+    background-color: #ff2992;
+}
+
+#instagram{
+    background: linear-gradient(#7f37c9, #ff2992,#ff9807);
+   
+}
+
+#whatsapp{
+    background-color: #13be1b;
+}
+#twitter{
+    background-color: rgb(0, 157, 255);
+}
+.footer_list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+.footer_list .footer_link{
+    color: var(--color-neutral-30);
+    transition: all 0.4s;
+}
+.footer_list .footer_link:hover {
+    color: #7f37c9;
+}
+
+#footer_subscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+#footer_subscribe p{
+    color: var(--color-neutral-30); 
+
+}
+#footer_subscribe p:hover {
+    color: #7f37c9;
+}
+
+.input_group{
+    display: flex;
+    align-items: center;
+    background-color: var(--color-neutral-0);
+    border-radius: 4px;
+}
+.input_group input{
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+.input_group button{
+    background-color: #7f37c9;
+    color: var(--color-neutral-40);
+    border: none;
+    font-size: 1.125rem;
+    padding: 0px 1.12rem;
+    height: 100%;
+    border-radius:  0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+
+}
+.input_group button :hover{
+    opacity: 0.8;}
+#footer_copyright{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-neutral-0);
+    font-size: 0.9;
+    padding: 1.5rem;
+    font-weight: 100;
 }
