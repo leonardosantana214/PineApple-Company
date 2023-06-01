@@ -110,12 +110,12 @@ header{
 .nome_chuteira{
     font-weight: bold;
      font-family: 'Poppins', sans-serif;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 /* DESCONTO */
 .desconto{
-    margin-left: 130px;
+    margin-left: 160px;
 }
 
 /* PREÇO */
@@ -204,17 +204,28 @@ header{
     justify-content: center;
     gap:100px;
     padding:100px;
+    background-color: #;
 }
 
 /* CHUTERIAS */
 .chuteira{
     font-weight: 700;
+    border: 1 px solid black;
+    height: 500px;
+    width: 340px;
+    text-align: justify;
+}
 
+/* IMAGEM DAS OFERTAS SECUNDÁRIAS */]
+.chuteira img{
+    width:100%;
+    
 }
 
 
 .preco_secundario{
     text-align: center;
+    font-size: 24px;
 }
 
 /* FOOTER */
