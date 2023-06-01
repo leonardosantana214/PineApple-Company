@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylepagamento.css">
+    <title>Confirmar compra</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- colocar a página de confirmação de compra depois -->
+    <form action="compra_realizada.html" method="post" class="texto">
+        <div class="Inputs">
+            <p>Confirmar compra</p> <br>
+                   <div class="a1"> <input type="text" name="e-mail" placeholder="Nome de usuário" id="" class="f1" autocomplete="off" required></div> <br> <br>
+            <div class="a1"> <input type="text" name="text" placeholder="CPF" class="f1" autocomplete="off" minlength="11" maxlength="11" required> </div> <br> <br> <br>
+            <!-- opções de pagamento -->
+            <div class="pagamento">
+                <i class="fa-regular fa-credit-card"></i>
+                <i class="fa-brands fa-pix" ></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-sharp fa-solid fa-barcode"></i>
+            </div>
+            <input type="submit" value="Confirmar compra" class="F2">
+        </div>
+    </form>
+</body>
+</html>
