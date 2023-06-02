@@ -366,55 +366,68 @@ textarea:focus, input:focus {
 .t2:hover{
     color: #9747FF;
 }
+
+
+/* FOOTER */
+/* CORES VARIÁVEIS DO FOOTER */
 :root{
     --color-neutral-0: #0e0c0c;
     --color-neutral-10: #171717;
     --color-neutral-30: #a8a29e;
     --color-neutral-40: #f5f5f5;
-}
-
-*{
+  }
+  
+  /* RESET E CONFIG GERAIS DO FOOTER */
+  *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'inter', sans-serif;
+    font-family: Poppins;
     letter-spacing: 1px;
     text-decoration: none;
-}
-main{
+  }
+  
+  /* MAIN DO FOOTER SÓ DE BASE */
+  main{
     height: 80vh;
-}
-footer{
+  }
+  
+  /* ORGANIZAÇÃO DO FOOTER TAG */
+  footer{
     width: 100%;
     color: var(--color-neutral-40);
     text-decoration: none;
-
-}
-.footer-link{
+  
+  }
+  
+  /* LINKS DO FOOTER, SEM SUBLINHAR */
+  .footer-link{
     text-decoration: none;
-
-}
-
-#footer_content{
+  
+  }
+  
+  /* CONTAINER GERAL DAS AREAS DE REDES SOCIAIS */
+  #footer_content{
     background-color: var(--color-neutral-10);
     display: grid;
     grid-template-columns: repeat(4,1fr);
     padding: 3rem 3.5rem ;
-}
-#footer_contacts h1{
+  }
+  
+  /* H1 TITULO PINEAPPLES COMPANY DA AREA DAS REDES SOCIAIS */
+  #footer_contacts h1{
     margin-bottom: 0.75rem;
-}
-#footer_social_midia{
-    display: flex;
-}
-
-#footer_social_media{
+  }
+  
+  /* CONTAINER DAS AREAS DAS REDES SOCIAIS*/
+  #footer_social_media{
     display: flex;
     gap: 2rem;
     margin-top: 1.5rem;
-}
-
-#footer_social_media .footer_link{
+  }
+  
+  /* CONFIG LINKS DE REDES SOCIAIS E CONTAINER */
+  #footer_social_media .footer_link{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -423,71 +436,90 @@ footer{
     color: var(--color-neutral-40);
     border-radius: 50%;
     transition: all 0.4s;
-
-}
-
-##footer_social_media .footer_link i{
+  
+  }
+  
+  /* LINKS DE REDES SOCIAIS */
+  #footer_social_media .footer_link i{
     font-size: 1.25rem;
-
-}
-#footer_social_media .footer_link :hover{
+  
+  }
+  
+  /* HOVER DOS LINKS REDES SOCIAIS */
+  #footer_social_media .footer_link :hover{
     opacity: 0.8;
-}
-
-#pineapple{
-    background-color: #ff2992;
-}
-
-#instagram{
+  }
+  
+  /* FUNDO DO ICON INSTAGRAM */
+  #instagram{
     background: linear-gradient(#7f37c9, #ff2992,#ff9807);
    
-}
-
-#whatsapp{
+  }
+  
+  /* FUNDO ICON WHATSAPP */
+  #whatsapp{
     background-color: #13be1b;
-}
-#twitter{
+  }
+  
+  /* FUNDO ICON TWITTER */
+  #twitter{
     background-color: rgb(0, 157, 255);
-}
-.footer_list{
+  }
+  
+  /* LISTA NAO ORDENADA BLOG */
+  .footer_list{
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
     list-style: none;
-}
-.footer_list .footer_link{
+  }
+  
+  /* COR E TRANSIÇÃO NOS LINKS DE REDIRECIONAMENTO DO SITE */
+  .footer_list .footer_link{
     color: var(--color-neutral-30);
     transition: all 0.4s;
-}
-.footer_list .footer_link:hover {
+  }
+  
+  /* HOVER NOS LINKS DE REDIRECIONAMENTO DO SITE */
+  .footer_list .footer_link:hover {
     color: #7f37c9;
-}
-
-#footer_subscribe{
+  }
+  
+  /* CONTAINER DE INSCRIÇÃO */
+  #footer_subscribe{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-}
-#footer_subscribe p{
+  }
+  
+  /* PARÁGRAFOS DE INSCRIÇÃO */
+  #footer_subscribe p{
     color: var(--color-neutral-30); 
-
-}
-#footer_subscribe p:hover {
+  
+  }
+  
+  /* HOVER PARÁGRAFOS DE INSCRIÇÃO */
+  #footer_subscribe p:hover {
     color: #7f37c9;
-}
-
-.input_group{
+  }
+  
+  /* CONTAINER DE INPUT PARA ENVIAR EMAIL */
+  .input_group{
     display: flex;
     align-items: center;
     background-color: var(--color-neutral-0);
     border-radius: 4px;
-}
-.input_group input{
+  }
+  
+  /* INPUT PARA ENVIAR EMAIL */
+  .input_group input{
     all: unset;
     padding: 0.75rem;
     width: 100%;
-}
-.input_group button{
+  }
+  
+  /* BOTÃO PARA ENVIAR EMAIL */
+  .input_group button{
     background-color: #7f37c9;
     color: var(--color-neutral-40);
     border: none;
@@ -497,16 +529,20 @@ footer{
     border-radius:  0px 4px 4px 0px;
     cursor: pointer;
     transition: all 0.4s;
-
-}
-.input_group button :hover{
-    opacity: 0.8;}
-#footer_copyright{
+  
+  }
+  
+  /* HOVER BOTÃO DE ENVIAR EMAIL */
+  .input_group button :hover{
+    opacity: 0.8;
+  }
+  
+  /* COPYRIGHT EMBAIXO NO FOOTER */
+  #footer_copyright{
     display: flex;
     justify-content: center;
     background-color: var(--color-neutral-0);
     font-size: 0.9;
     padding: 1.5rem;
     font-weight: 100;
-}
-/* css novo */
+  }

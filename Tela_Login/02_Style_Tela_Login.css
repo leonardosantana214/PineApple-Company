@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-* {
-    font-family: 'Poppins', sans-serif;
-}
+
 /* CONFIGURAÇAO GERAL PAGINA */
 *{
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* CONTAINER FAIXA PINE_SPORTS */
@@ -25,8 +24,8 @@ header nav .faixa_pine{
 
 /* PINE_SPORTS */
 .pine_sports{
-    font-family: Monomaniac One;
-    font-size:40px;
+    font-family: Poppins;
+    font-size:30px;
     color:white;
     letter-spacing: 2px;
     margin-left: 15px;
@@ -64,8 +63,8 @@ form:hover{
     position: relative;
     margin: 40px;
     color: #fff;
-    font-family:Monomaniac One;
-    font-size:25px;
+    font-family:Poppins;
+    font-size:20px;
     text-decoration: none;
     overflow: hidden;
     margin-top: 0px;
@@ -106,7 +105,7 @@ body {
 /* TÍTULO FORMULÁRIO */
 .title {
     color: #000;
-    font-family: Monomaniac One;
+    font-family: Poppins ;
     font-size: 36px;
     margin-top 70px;
     text-align: center;
@@ -127,7 +126,7 @@ body {
     padding-left: 20px;
     background-color: transparent;
     color: black;
-    font-family: Monomaniac One;
+    font-family: Poppins;
     font-size: 22px;
     border-color: #A5A2A2;
     border-top: none;
@@ -157,8 +156,8 @@ body {
 /* CSS LINKs */
 .esqueceu_senha, .conta{
     color: blue;
-    font-family: Monomaniac One;
-    font-size:20px;
+    font-family: Poppins;
+    font-size:15px;
 }
 
 /* CONTAINER DOS LINKS */
@@ -169,8 +168,9 @@ body {
 /* WEBKIT PLACEHOLDER INPUT GERAL */
 ::-webkit-input-placeholder {
     color:#A5A2A2;
-    font-family: Monomaniac One;
-    font-size: 22px;
+    font-family: Poppins;
+    font-size: 18px;
+    margin-bottom: 5px;
 }
 
 /* HOVER LINKS "ESQUECEU A SENHA" E "CRIAR CONTA" */
@@ -184,6 +184,10 @@ textarea:focus, input:focus {
     box-shadow: 0 0 0 0;
     outline: 0;
 }
+
+
+/* FOOTER */
+/* CORES VARIÁVEIS DO FOOTER */
 :root{
     --color-neutral-0: #0e0c0c;
     --color-neutral-10: #171717;
@@ -191,47 +195,56 @@ textarea:focus, input:focus {
     --color-neutral-40: #f5f5f5;
 }
 
+/* RESET E CONFIG GERAIS DO FOOTER */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'inter', sans-serif;
+    font-family: Poppins;
     letter-spacing: 1px;
     text-decoration: none;
 }
+
+/* MAIN DO FOOTER SÓ DE BASE */
 main{
     height: 80vh;
 }
+
+/* ORGANIZAÇÃO DO FOOTER TAG */
 footer{
     width: 100%;
     color: var(--color-neutral-40);
     text-decoration: none;
 
 }
+
+/* LINKS DO FOOTER, SEM SUBLINHAR */
 .footer-link{
     text-decoration: none;
 
 }
 
+/* CONTAINER GERAL DAS AREAS DE REDES SOCIAIS */
 #footer_content{
     background-color: var(--color-neutral-10);
     display: grid;
     grid-template-columns: repeat(4,1fr);
     padding: 3rem 3.5rem ;
 }
+
+/* H1 TITULO PINEAPPLES COMPANY DA AREA DAS REDES SOCIAIS */
 #footer_contacts h1{
     margin-bottom: 0.75rem;
 }
-#footer_social_midia{
-    display: flex;
-}
 
+/* CONTAINER DAS AREAS DAS REDES SOCIAIS*/
 #footer_social_media{
     display: flex;
     gap: 2rem;
     margin-top: 1.5rem;
 }
 
+/* CONFIG LINKS DE REDES SOCIAIS E CONTAINER */
 #footer_social_media .footer_link{
     display: flex;
     align-items: center;
@@ -244,67 +257,86 @@ footer{
 
 }
 
-##footer_social_media .footer_link i{
+/* LINKS DE REDES SOCIAIS */
+#footer_social_media .footer_link i{
     font-size: 1.25rem;
 
 }
+
+/* HOVER DOS LINKS REDES SOCIAIS */
 #footer_social_media .footer_link :hover{
     opacity: 0.8;
 }
 
-#pineapple{
-    background-color: #ff2992;
-}
-
+/* FUNDO DO ICON INSTAGRAM */
 #instagram{
     background: linear-gradient(#7f37c9, #ff2992,#ff9807);
    
 }
 
+/* FUNDO ICON WHATSAPP */
 #whatsapp{
     background-color: #13be1b;
 }
+
+/* FUNDO ICON TWITTER */
 #twitter{
     background-color: rgb(0, 157, 255);
 }
+
+/* LISTA NAO ORDENADA BLOG */
 .footer_list{
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
     list-style: none;
 }
+
+/* COR E TRANSIÇÃO NOS LINKS DE REDIRECIONAMENTO DO SITE */
 .footer_list .footer_link{
     color: var(--color-neutral-30);
     transition: all 0.4s;
 }
+
+/* HOVER NOS LINKS DE REDIRECIONAMENTO DO SITE */
 .footer_list .footer_link:hover {
     color: #7f37c9;
 }
 
+/* CONTAINER DE INSCRIÇÃO */
 #footer_subscribe{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
+
+/* PARÁGRAFOS DE INSCRIÇÃO */
 #footer_subscribe p{
     color: var(--color-neutral-30); 
 
 }
+
+/* HOVER PARÁGRAFOS DE INSCRIÇÃO */
 #footer_subscribe p:hover {
     color: #7f37c9;
 }
 
+/* CONTAINER DE INPUT PARA ENVIAR EMAIL */
 .input_group{
     display: flex;
     align-items: center;
     background-color: var(--color-neutral-0);
     border-radius: 4px;
 }
+
+/* INPUT PARA ENVIAR EMAIL */
 .input_group input{
     all: unset;
     padding: 0.75rem;
     width: 100%;
 }
+
+/* BOTÃO PARA ENVIAR EMAIL */
 .input_group button{
     background-color: #7f37c9;
     color: var(--color-neutral-40);
@@ -317,8 +349,13 @@ footer{
     transition: all 0.4s;
 
 }
+
+/* HOVER BOTÃO DE ENVIAR EMAIL */
 .input_group button :hover{
-    opacity: 0.8;}
+    opacity: 0.8;
+}
+
+/* COPYRIGHT EMBAIXO NO FOOTER */
 #footer_copyright{
     display: flex;
     justify-content: center;
