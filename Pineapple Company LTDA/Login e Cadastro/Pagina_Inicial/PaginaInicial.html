@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylePaginaColossal.css">
-    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="shortcut icon" href="img/pineapple.svg" type="image/x-icon">
     <title>Inicio - Pineapple Company</title>
 </head>
 <body>
@@ -16,7 +16,7 @@
 
     <!-- LOGO DA PINEAPPLE (LOGO DO LOGIN) -->
 
-  <a href="#"><img src="img/pineapple (3).png" alt=""></a>
+  <a href="#"><img src="img/Pineapple_logo_Roxo.png" alt=""></a>
 
         <!-- NAV DO MENU -->
   
@@ -102,7 +102,7 @@
 
                           <!-- INPUT DO SEARCH -->
 
-                          <input type="text" class="search-box-input" name="busca" placeholder="Faça sua Pesquisa">
+                          <input type="search" class="search-box-input" name="busca" placeholder="Faça sua Pesquisa">
                           <button class="search-box-button"><i class="fa-solid fa-magnifying-glass"></i></button>
                       
                       </form>
@@ -143,10 +143,23 @@
 
 <!-- INICIO DO MAIN  -->
 <main>
-    <!-- CARROSSEL DE IMAGENS NO BANNER -->
+    <!-- IMAGENS NO BANNER -->
     <div class="slide">
           <div class="banner">
-              <img src="https://www.wallpapers.net/web/wallpapers/free-download-the-expanse-4k-wallpaper-for-desktop-mobiles/1500x500.jpg" alt="">
+              <img src="https://images8.alphacoders.com/128/1286225.jpg" alt="">
+          </div>
+          <div class="banner-dest">
+            <img src="https://images4.alphacoders.com/117/1175210.jpg" alt="">
+            <div class="text-dest">
+              <p>
+                  <span>REAL MADRID<br> X <br> ADIDAS <br></span>
+                   NOVA COLEÇÃO DE ROUPAS PARA INVERNO <br> DA ADIDAS E O REAL MADRID <br>
+                   <br>
+                  <button>
+                        Saiba Mais
+                  </button>
+              </p>
+            </div>
           </div>
 
     </div>
@@ -182,9 +195,59 @@
                   10x de R$45,00
               </p>
             </a>
+            <br>
+          </section>
+    </section>
+    <br><br>
+    <hr>
 
+          <!-- BANNER E AREA FOCADO PARA A COPA DO MUNDO FEMININA E A IMPORTANCIA -->
+
+          <section class="world-cup">
+
+              <section class="banner-wrld-cup">
+                  <img src="https://wallpapercave.com/dwp1x/wp2552679.jpg" alt="Banner das Mulheres">
+
+              </section>
+              <section class="text-wrld-cup">
+                  <p>
+                       <span>MARTA</span> <br> 
+
+                  </p>
+              </section>
           </section>
 
+            <!-- VIDEO COLOSSAL -->
+
+          <section class="video-colossal">
+                <section class="vd-colossal">
+                      <img src="https://wallpapercave.com/wp/wp4966901.jpg" alt="marta"  style="--g: 20px;--b:5px;--c:#9747FF;">
+                </section>
+
+                <!-- ESCOLHAS DE CLIQUE -->
+                
+                <section class="text-colossal">
+                     <ul class="list-colossal">
+                        <li><img src="img/kisspng-ballon-d-or-2017-2014-fifa-ballon-d-or-ballon-d-or-balon-5ac2f121a2d373.893728001522725153667.png" alt="bola d outros" onclick="trocaimg('img/marta1.jpg')"></li>
+                        <li><img src="https://wallpapercave.com/dwp1x/wp5556592.jpg" alt="bola d outros" onclick="trocaimg('https:wallpapercave.com/dwp1x/wp5556592.jpg')"></li>
+                        <li><img src="img/kisspng-ballon-d-or-2017-2014-fifa-ballon-d-or-ballon-d-or-balon-5ac2f121a2d373.893728001522725153667.png" alt="bola d outros" onclick="trocaimg('img/marta3.jpg')"></li>
+                     </ul>
+                </section>
+
+                <!-- SCRIPT DAS ESCOLHAS -->
+
+                <section class="Js">
+
+                  <script>
+                      function trocaimg(anythings) {
+                        document.querySelector('.vd-colossal img').src = anythings;
+                      }
+                     
+                  </script>
+
+                </section>
+
+          </section>
     </main>
 </body>
 </html>
