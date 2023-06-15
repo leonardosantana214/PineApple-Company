@@ -284,6 +284,8 @@ body {
 .div_side{
     height: 100%;
     width:100%;
+    display: flex;
+    flex-direction: row;
 }
 
 /* IMAGEM DOS ANGULOS DAS CHUTEIRAS */
@@ -300,7 +302,7 @@ body {
     flex-direction: column;
     gap: 50px;
     height:400px;
-    width:600px;
+    width:550px;
 }
 
 /* IMAGEM PRINCIPAL */
@@ -377,6 +379,13 @@ body {
     padding:15px;
     width:250px;
     font-size:16px;
+    transition: 0.5s;
+}
+
+
+.adicionar:hover{
+  background-color: #9747FF;
+  transition: 0.5s;
 }
 
 /* CONTAINER CEP ENVIAR */
@@ -413,8 +422,13 @@ body {
     height:45px;
     width:120px;
     margin-top:22px;
+    transition: 0.5s;
 }
 
+#enviar:hover{
+  background-color: #9747FF;
+  transition: 0.5s;
+}
 /* DIVISÃO DE TELA */
 .meia_tela{
     width:84vw;
