@@ -1,10 +1,251 @@
-/* FONT FAMILY GERAL */
+/* MENU */
+/*FONTE, E RESET DA PAGINA */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 * {
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* @import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Poppins:ital,wght@1,300&display=swap); */
+body {
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  margin-top: 200px;
+}
+
+/* ESTILO DO MENU */
+#header {
+  display: flex;
+  transition: all 1s ease;
+  background-color: white;
+  align-items: center;
+  color: #000;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+ 
+}
+
+/* IMAGENS DA LOGO COM, OS HOVER DOS BOTÕES */
+#header img {
+  gap: 2rem;
+  height: 70px;
+  width: 80px;
+}
+
+#menu a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: purple;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#menu a:hover:before {
+  visibility: visible;
+  color: #000;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* ESTILO DO MENU COMO QUE ELE FICARIA */
+#menu {
+  transition: all 1s;
+  left: 900px;
+  background-color: #fff;
+  padding: 20px;
+  position: sticky;
+  
+  /* ALTURA DO CABEÇALHO */
+}
+
+/* ESTILOS DO MENU */
+#menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu ul li {
+
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#menu ul li a {
+  color: #000;
+  transition: all 1s ease;
+  position: relative;
+  text-decoration: none;
+  padding: 5px;
+}
+
+
+/* ESTILO DO MENUDROP E COMO FUNCIONA */
+.dropdown-content {
+  transition: all 1s ease;
+  display: none;
+  color: white;
+  transition: all 1s ease;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: white;
+  background-color: #9747FF;
+  transition: all 1s ease;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 12px 16px;
+  flex-wrap: wrap;
+  text-decoration: none;
+  display: flex;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  color: white;
+  transition: all 1s ease;
+}
+
+/* AI O CSS QUE ESTA NOS CODIGOS DE JS O "IMPOSTOR" */
+.scroll-black {
+  background-color: #000 !important;
+  color: #fff !important;
+  transition: all 1s ease;
+}
+
+.scroll-black a {
+  color: #fff !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease;
+
+}
+
+.scroll-black.box-busca {
+  color: #fff !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease;
+
+}
+
+/* SEARCH DO SITE (COLOQUEI EM INGLÊS POIS USEI DE UM SITE DE BASE) */
+.box-busca {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+}
+
+.search-box-input::placeholder{
+  padding-left: 7px;
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+/* CORES DO PLACEHOLDER  */
+.search-box-input::-webkit-input-placeholder {
+  color: var(--color-neutral-30);
+}
+
+.search-box-input::-moz-placeholder {
+  color: var(--color-neutral-30);
+}
+
+.search-box-input:-ms-input-placeholder {
+  color: var(--color-neutral-30);
+}
+
+.search-box form {
+  border: #9747FF solid 2px;
+  display: flex;
+  border-radius: 50px;
+  height: 30px;
+}
+
+.search-box:hover .search-box-input {
+  width: 350px;
+}
+
+.scroll-black.search-box {
+  color: #fff;
+  background-color: #000;
+}
+
+.scroll-black.search-box-button {
+  background-color: #000;
+}
+
+.search-box-input {
+  outline: 0;
+  font-size: 1.2em;
+  color: #9747FF;
+  border: none;
+  background: none;
+  transition: 0.45s;
+  padding-left: 7px;
+  width: 250px;
+}
+
+/* BOTÕES */
+.search-box-button {
+  display: flex;
+  border-radius: 50%;
+  color: gray;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.search-box-button:active {
+  transform: scale(.85);
+}
+
+/* TAMANDO DO HOVER DO SITE */
+@media screen and (min-width: 400px) {
+
+  .search-box:hover .search-box-input {
+    width: 360px;
+  }
+}
+
+#header a:hover {
+
+  filter: opacity(65%);
+
+}
+
+/* FONT FAMILY GERAL */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 :root{
     --color-neutral-0: #0e0c0c;
@@ -17,13 +258,7 @@
 *{
     margin: 0;
     padding:0;
-}
-
-/* HEADER */
-header{
-    height:130px;
-    background-color: black;
-
+    font-family: 'Poppins', sans-serif;
 }
 
 /* CONTAINER DA PRIMEIRA METADE DA TELA */
@@ -135,16 +370,13 @@ header{
 /* BOTÃO DE ADICIONAR */
 .adicionar{
     margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     background-color: #000;
     color: #fff;
     font-weight: bolder;
-    padding:20px;
-    height:20px;
-    width:230px;
-    font-size:20px;
+    padding:15px;
+    width:250px;
+    font-size:16px;
 }
 
 /* CONTAINER CEP ENVIAR */
@@ -159,7 +391,7 @@ header{
     flex-direction: column;
     font-weight: bold;
     font-size:16px;
-     font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 /* CEP */
 #cep{
@@ -245,11 +477,6 @@ header{
     font-family: Poppins;
     letter-spacing: 1px;
     text-decoration: none;
-  }
-  
-  /* MAIN DO FOOTER SÓ DE BASE */
-  main{
-    height: 80vh;
   }
   
   /* ORGANIZAÇÃO DO FOOTER TAG */

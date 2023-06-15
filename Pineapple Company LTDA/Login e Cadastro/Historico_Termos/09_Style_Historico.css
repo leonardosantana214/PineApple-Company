@@ -1,12 +1,14 @@
+/* FONT FAMILY GERAL */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 /* RESET DE CONFIGURAÇÕES */
 *{
     margin: 0;
     padding: 0;
-    font-family: Poppins, sans-serif;
+    margin-bottom: 10px;
 }
 
-/* FONT FAMILY GERAL */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 
 /* VARIÁVEIS DE CORES DA PÁGINA */
 :root{
@@ -42,7 +44,7 @@ main{
     height:400px;
     width:400px;
     left: 600px;
-    top: 150px;
+    top: 100px;
 }
 
 #fundo_pine_dois{
@@ -50,7 +52,15 @@ main{
     height:400px;
     width:400px;
     left: 600px;
-    top: 850px;
+    top: 670px;
+}
+
+#fundo_pine_tres{
+    position: absolute;
+    height:400px;
+    width:400px;
+    left: 600px;
+    top: 1240px;
 }
 /* HEADERS DOS TITULOS */
 .header_titulo{
@@ -126,11 +136,6 @@ main{
     font-family: Poppins;
     letter-spacing: 1px;
     text-decoration: none;
-  }
-  
-  /* MAIN DO FOOTER SÓ DE BASE */
-  main{
-    height: 80vh;
   }
   
   /* ORGANIZAÇÃO DO FOOTER TAG */
