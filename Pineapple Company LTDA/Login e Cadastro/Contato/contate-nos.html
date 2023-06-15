@@ -14,36 +14,72 @@
 
 <body>
 
-    <head>
-        <!-- colocar o header depois -->
-    </head>
+    <!-- MENU DO SITE HEADER NAV (PARA OS BOTÕES) -->
+    <header id="header">
 
+        <!-- LOGO DA PINEAPPLE (LOGO DO LOGIN) -->
+        <a href="#"><img src="img/Pineapple_logo_Roxo.png" alt=""></a>
+
+        <!-- NAV DO MENU -->
+
+        <nav id="menu">
+
+            <!-- LISTA DOS BOTÕES -->
+            <ul>
+                <li>
+                    <a href="PaginaInicial.html">Pine_Sports</a>
+                </li>
+            </ul>
+    </header>
+
+    <!-- JAVASCRIPT DO MENU -->
+    <script>
+
+        // QUANDO DESCER A SCROLLBAR TROCAR AS CORES DO SITE
+        window.addEventListener("scroll", function () {
+
+            // VARIAVEIS PARA A TROCAR DE CORES (ELES ESTÃO LINKADOS NO CSS)
+            var header = document.getElementById("header");
+            var menu = document.getElementById("menu");
+
+            // AQUI É PARA SABER SE DESCEU OU NÃO IF PARA TROCAR A COR E ELSE PARA NÃO TROCAR
+            if (window.scrollY > 0) {
+                header.classList.add("scroll-black");
+                menu.classList.add("scroll-black");
+            } else {
+                header.classList.remove("scroll-black");
+                menu.classList.remove("scroll-black");
+            }
+        });
+    </script>
+
+    <!-- MAIN -->
     <main>
-        <div class="img"><img src="img/contato.png" alt="contate-nos"></div>
-        <div class="tudo">
-            <h3 class="contate">Contate-nos</h1>
-                <div class="text">
-                    <aside>
 
-                        <!-- colocar o link depois -->
-                        <form action="##" class>
-                            <input type="text" class="input" placeholder="Nome"> <br> <br> <br>
-                            <input type="email" class="input" placeholder="E-mail"> <br> <br> <br>
-                            <input type="text" class="input" placeholder="Mensagem"> <br> <br> <br>
-                            <button class="button">Contate-nos</button>
-                        </form>
-                        <div class="contato">
-                            <h1>Contato</h1>
-                            <h2>Contato@pineapplecompany.com</h2> <br>
-                            <h1>Sede</h1>
-                            <h2>Centreville Santo André-SP</h2>
-                            <a href="##"><i class="fa-brands fa-facebook" style="color: #000000;"></i></a>
-                            <a href="##"><i class="fa-brands fa-instagram" style="color: #000000;"></i></a>
-                            <a href="##"><i class="fa-brands fa-whatsapp" style="color: #000000;"></i></a>
-                        </div>
+        <!-- CONTAINER GERAL -->
+        <section class="container_principal">
+
+            <!-- SECTION COM A IMAGEM -->
+            <section class="container_img">
+                <img src="img/contato.png" alt="">
+            </section>
+
+            <!-- QUADRO COM O CONTATE-NOS -->
+            <section class="quadro">
+                <p>Contate-nos</p>
+
+                <!-- SECTION COM OS INPUT E TEXT AREA -->
+                <section class="container_input">
+                    <input type="email" class="input" placeholder="usuario@gmail.com" autocomplete="off" required>
+                    <textarea name="a" id="" cols="30" rows="5" required></textarea>
+                </section>
+
+                <!-- BOTÃO DE ENVIAR -->
+                <div class="button">
+                    <p>Enviar</p>
                 </div>
-        </div>
-        </aside>
+            </section>
+        </section>
     </main>
 
     <!-- RODAPÉ DO SITE -->

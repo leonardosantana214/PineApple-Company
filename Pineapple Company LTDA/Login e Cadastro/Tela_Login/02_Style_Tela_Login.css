@@ -82,7 +82,8 @@ form:hover{
     border: 2px #9747FF solid;
     color: white;
     box-shadow: 0 0 5px #9747FF, 0 0 20px #9747FF, 0 0 35px #9747FF;
-    
+    transition: 0.5s;
+    background-color: #9747FF;
 }
 
 /* ACTIVE BOTÃO NEON */
@@ -107,7 +108,7 @@ body {
     color: #000;
     font-family: Poppins ;
     font-size: 36px;
-    margin-top 70px;
+    margin-top: 70px;
     text-align: center;
     margin: center;
     font-weight: lighter;
@@ -127,7 +128,7 @@ body {
     background-color: transparent;
     color: black;
     font-family: Poppins;
-    font-size: 22px;
+    font-size: 18px;
     border-color: #A5A2A2;
     border-top: none;
     border-left: none;
