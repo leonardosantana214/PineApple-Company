@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylePaginaColossal.css">
+    <link rel="shortcut icon" href="img/pineapple.svg" type="image/x-icon">
+    <title>Inicio - Pineapple Company</title>
+</head>
+<body>
+    <!-- MENU DO SITE HEADER NAV (PARA OS BOTÕES) -->
+
+  <header id="header">
+
+    <!-- LOGO DA PINEAPPLE (LOGO DO LOGIN) -->
+
+  <a href="#"><img src="img/Pineapple_logo_Roxo.png" alt=""></a>
+
+        <!-- NAV DO MENU -->
+  
+          <nav id="menu"> 
+      
+            <!-- LISTA DOS BOTÕES -->
+
+            <ul>
+              
+
+              <li><a href="#">Home</a></li>
+
+
+              <li><a href="#">Novidades</a></li>
+
+              <!-- MENUDROP, PARA APARECER AS OPÇÕES DE COMPRAS NO MEU -->
+
+              <!-- ITENS DOS MENUDRÓP -->
+
+              <li class="dropdown">
+
+
+                <a href="#">Masculino</a>
+
+                <!-- ITENS DO MENUDROP -->
+
+                <div class="dropdown-content">
+                  <a href="#">Chuteiras</a>
+                  <a href="#">Calçados</a>
+                  <a href="#">Tenis</a>
+                  <a href="#">Roupas</a>
+                  <a href="#">Corrida</a>
+                  <a href="#">Times</a>
+                  <a href="#">NBA</a>
+                  <a href="#">Meia</a>
+                  <a href="#">Munhequeira</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="#">Feminino</a>
+
+                <!-- ITENS DO MENUDROP -->
+
+                <div class="dropdown-content">
+                  <a href="#">Chuteiras</a>
+                  <a href="#">Calçados</a>
+                  <a href="#">Tenis</a>
+                  <a href="#">Roupas</a>
+                  <a href="#">Corrida</a>
+                  <a href="#">Times</a>
+                  <a href="#">NBA</a>
+                  <a href="#">Meia</a>
+                  <a href="#">Munhequeira</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="#">Infantil</a>
+
+                <!-- ITENS DO MENUDROP -->
+
+                <div class="dropdown-content">
+                  <a href="#">Chuteiras</a>
+                  <a href="#">Calçados</a>
+                  <a href="#">Tenis</a>
+                  <a href="#">Roupas</a>
+                  <a href="#">Corrida</a>
+                  <a href="#">Times</a>
+                  <a href="#">NBA</a>
+                  <a href="#">Meia</a>
+                  <a href="#">Munhequeira</a>
+                </div>
+              </li>
+              <li>
+                  <!-- SEARCH -->
+
+                <div class="box-busca">
+
+                    <!-- FORMULARIOSINHO -->
+
+                  <div class="search-box">
+                      
+                      <form method="post" action="#">
+
+                          <!-- INPUT DO SEARCH -->
+
+                          <input type="search" class="search-box-input" name="busca" placeholder="Faça sua Pesquisa">
+                          <button class="search-box-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                      
+                      </form>
+                      
+                  </div><!-- SEARCH -->
+              
+              </div><!-- BOX BUSCA-->
+              </li>
+              <li><a href="#"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+
+            </ul>
+          </nav>
+</header>
+
+<script>
+
+  // QUANDO DESCER A SCROLLBAR TROCAR AS CORES DO SITE
+
+  window.addEventListener("scroll", function() {
+
+    // VARIAVEIS PARA A TROCAR DE CORES (ELES ESTÃO LINKADOS NO CSS)
+
+    var header = document.getElementById("header");
+    var menu = document.getElementById("menu");
+
+    // AQUI É PARA SABER SE DESCEU OU NÃO IF PARA TROCAR A COR E ELSE PARA NÃO TROCAR
+
+    if (window.scrollY > 0) {
+      header.classList.add("scroll-black");
+      menu.classList.add("scroll-black");
+    } else {
+      header.classList.remove("scroll-black");
+      menu.classList.remove("scroll-black");
+    }
+  });
+</script>
+<!-- FINAL DO MENU -->
+
+<!-- INICIO DO MAIN  -->
+<main>
+    <!-- IMAGENS NO BANNER -->
+    <div class="slide">
+          <div class="banner">
+              <img src="https://images8.alphacoders.com/128/1286225.jpg" alt="">
+          </div>
+          <div class="banner-dest">
+            <img src="https://images4.alphacoders.com/117/1175210.jpg" alt="">
+            <div class="text-dest">
+              <p>
+                  <span>REAL MADRID<br> X <br> ADIDAS <br></span>
+                   NOVA COLEÇÃO DE ROUPAS PARA INVERNO <br> DA ADIDAS E O REAL MADRID <br>
+                   <br>
+                  <button>
+                        Saiba Mais
+                  </button>
+              </p>
+            </div>
+          </div>
+
+    </div>
+    <!-- PROMOÇÃO(DESTAQUE - SEMANAL) -->
+    <section class="Destaques">
+        <p>
+          <h1>
+              PROMOÇÃO SEMANAL
+          </h1>
+          <span>
+
+            Esses são os itens com descontos de 25%
+
+          </span>
+        </p>
+    </section>
+    <!-- ITENS QUE VÃO ESTAR EM PROMOÇÃO -->
+    <section class="itens">
+
+          <section class="produtos">
+            <a href="#">
+              <p>
+                <img src="https://d2r9epyceweg5n.cloudfront.net/stores/002/322/390/products/chuteira-mercurial-superfly-elite-campo-011-f1e9ce24dce7da9a5816733244940648-640-0.jpeg" alt="">
+                <section class="cart">
+                  <button><i class="fa-solid fa-cart-shopping"></i></button>
+                </section>
+                <br> <hr>
+                <div class="frete">Frete Grátis</div>
+                Chuteira Nike Official <br> Mbappe France world Cup <br>
+              
+                <div class="sub"><s> R$600,00 </s></div>
+                <span>R$450,00</span> <br>
+                  10x de R$45,00
+              </p>
+            </a>
+            <br>
+          </section>
+    </section>
+    <br><br>
+    <hr>
+
+          <!-- BANNER E AREA FOCADO PARA A COPA DO MUNDO FEMININA E A IMPORTANCIA -->
+
+          <section class="world-cup">
+
+              <section class="banner-wrld-cup">
+                  <img src="https://wallpapercave.com/dwp1x/wp2552679.jpg" alt="Banner das Mulheres">
+
+              </section>
+              <section class="text-wrld-cup">
+                  <p>
+                       <span>MARTA</span> <br> 
+
+                  </p>
+              </section>
+          </section>
+
+            <!-- VIDEO COLOSSAL -->
+
+          <section class="video-colossal">
+                <section class="vd-colossal">
+                      <img src="https://wallpapercave.com/wp/wp4966901.jpg" alt="marta"  style="--g: 20px;--b:5px;--c:#9747FF;">
+                </section>
+
+                <!-- ESCOLHAS DE CLIQUE -->
+                
+                <section class="text-colossal">
+                     <ul class="list-colossal">
+                        <li><img src="img/kisspng-ballon-d-or-2017-2014-fifa-ballon-d-or-ballon-d-or-balon-5ac2f121a2d373.893728001522725153667.png" alt="bola d outros" onclick="trocaimg('img/marta1.jpg')"></li>
+                        <li><img src="https://wallpapercave.com/dwp1x/wp5556592.jpg" alt="bola d outros" onclick="trocaimg('https:wallpapercave.com/dwp1x/wp5556592.jpg')"></li>
+                        <li><img src="img/kisspng-ballon-d-or-2017-2014-fifa-ballon-d-or-ballon-d-or-balon-5ac2f121a2d373.893728001522725153667.png" alt="bola d outros" onclick="trocaimg('img/marta3.jpg')"></li>
+                     </ul>
+                </section>
+
+                <!-- SCRIPT DAS ESCOLHAS -->
+
+                <section class="Js">
+
+                  <script>
+                      function trocaimg(anythings) {
+                        document.querySelector('.vd-colossal img').src = anythings;
+                      }
+                     
+                  </script>
+
+                </section>
+
+          </section>
+    </main>
+</body>
+</html>
