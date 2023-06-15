@@ -19,6 +19,11 @@
     text-decoration: none;
   }
   
+  /* MAIN DO FOOTER SÓ DE BASE */
+  main{
+    height: 80vh;
+  }
+  
   /* ORGANIZAÇÃO DO FOOTER TAG */
   footer{
     width: 100%;
