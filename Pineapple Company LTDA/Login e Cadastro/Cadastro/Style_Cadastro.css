@@ -1,7 +1,6 @@
-@import url('https://fonts.cdnfonts.com/css/monomaniac-one');
-body{
-    font-family: 'Monomaniac One', sans-serif;
-    transition: all 2s ease-in-out;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
 }
 /* titulo */
 .F1 {
@@ -27,7 +26,7 @@ body {
 
 /* texto dos inputs */
 .F2, .f4, .F3, .F5, .feminino, .Masculino, .nãobinario, .Generos, .A1, .T6, .Data, .estado, .T7, .T10, .numero{
-    font-size: 19px;
+    font-size: 17px;
     color: #000;
     background-color: transparent;
 }
@@ -65,7 +64,7 @@ form {
     width: 500px;
     background-color: white;
     transition: 1s;
-    height: 550px;
+    height: 620px;
     display: flex;
     justify-content: center;
     border-radius: 10px;
@@ -83,7 +82,6 @@ form:hover {
 /* botão para enviar os dados */
 .t3 {
         color: white;
-        font-family: monospace;
         background-color: black;
         transition: 1s;
         width: 145px;
@@ -96,7 +94,7 @@ form:hover {
         position: relative;
         margin-left: 70px;
         font-size: 18px;
-        margin-top: 0px;
+        margin-top: -25px;
 }
 .t3:hover {
     background-color: #9747FF;
