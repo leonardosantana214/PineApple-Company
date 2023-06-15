@@ -359,20 +359,18 @@ main{
     transition: 0.7s;
 }
 
+.button a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}
+
 /* HOVER DO BOTÃO */
 .button:hover{
     transition: 0.7s;
     box-shadow: 0 0 5px #9747FF, 0 0 20px #9747FF, 0 0 35px #9747FF;
     background-color: #9747FF;
     
-}
-
-.button a p{
-    font-size: 20px;
-    color: #fff;
-}
-.button a{
-    text-decoration: none;
 }
 
 /* RODAPÉ */
