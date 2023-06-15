@@ -10,7 +10,9 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Carrinho_Pines</title>
 </head>
 
@@ -19,7 +21,7 @@
     <header id="header">
 
         <!-- LOGO DA PINEAPPLE (LOGO DO LOGIN) -->
-        <a href="#"><img src="img/pineapple (3).png" alt=""></a>
+        <a href="#"><img src="img/Pineapple_logo_Roxo.png" alt=""></a>
 
         <!-- NAV DO MENU -->
 
@@ -86,13 +88,15 @@
                 <li>
                     <!-- SEARCH -->
                     <div class="box-busca">
+
                         <!-- FORMULARIOSINHO -->
                         <div class="search-box">
 
                             <form method="post" action="#">
+
                                 <!-- INPUT DO SEARCH -->
-                                <input type="text" class="search-box-input" name="busca"
-                                    placeholder="Faça sua Pesquisa">
+                                <input type="text" class="search-box-input" name="busca" placeholder="Faça sua Pesquisa">
+
                                 <button class="search-box-button"><i class="fa-solid fa-magnifying-glass"></i></button>
 
                             </form>
@@ -112,21 +116,21 @@
 
         // QUANDO DESCER A SCROLLBAR TROCAR AS CORES DO SITE
         window.addEventListener("scroll", function () {
-            
-          // VARIAVEIS PARA A TROCAR DE CORES (ELES ESTÃO LINKADOS NO CSS)
-          var header = document.getElementById("header");
-          var menu = document.getElementById("menu");
-          
-          // AQUI É PARA SABER SE DESCEU OU NÃO IF PARA TROCAR A COR E ELSE PARA NÃO TROCAR
-          if (window.scrollY > 0) {
-            header.classList.add("scroll-black");
-            menu.classList.add("scroll-black");
-          } else {
-            header.classList.remove("scroll-black");
-            menu.classList.remove("scroll-black");
-          }
+
+            // VARIAVEIS PARA A TROCAR DE CORES (ELES ESTÃO LINKADOS NO CSS)
+            var header = document.getElementById("header");
+            var menu = document.getElementById("menu");
+
+            // AQUI É PARA SABER SE DESCEU OU NÃO IF PARA TROCAR A COR E ELSE PARA NÃO TROCAR
+            if (window.scrollY > 0) {
+                header.classList.add("scroll-black");
+                menu.classList.add("scroll-black");
+            } else {
+                header.classList.remove("scroll-black");
+                menu.classList.remove("scroll-black");
+            }
         });
-      </script>
+    </script>
 
     <!-- CONTAINER GERAL DA PÁGINA -->
     <main>
@@ -157,19 +161,20 @@
                 <div class="inputs">
                     <select name="" id="tamanho">
                         <option value="">Tamanho</option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
+                        <option value="">35</option>
+                        <option value="">36</option>
+                        <option value="">37</option>
+                        <option value="">38</option>
+                        <option value="">39</option>
+                        <option value="">40</option>
+                        <option value="">41</option>
+                        <option value="">42</option>
+                        <option value="">43</option>
                     </select>
                     <input type="text" placeholder="Quantia" id="quantia">
                 </div>
             </section>
+
             <!-- SECTION COM INFORMAÇÕES DO PRODUTO E BOTÕES DE FINALIZAÇÃO -->
             <section class="texto">
 
@@ -203,7 +208,7 @@
                     Adicionar ao carrinho
                 </div>
 
-                <br><br>
+                <br>
 
                 <!-- CEP -->
                 <div class="cep_enviar">
@@ -219,10 +224,12 @@
             </section>
         </section>
 
+        <br><br>
+
         <!-- DIVISÃO DE TELA -->
         <hr class="meia_tela">
 
-        <br><br><br><br>
+        <br><br>
 
         <!-- TITULO SECUNDÁRIO -->
         <p id="titulo_secundario">Você também pode gostar</p>

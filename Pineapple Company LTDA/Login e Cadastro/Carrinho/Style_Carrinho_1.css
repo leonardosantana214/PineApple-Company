@@ -11,7 +11,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  height: 2000vh;
+  height: 100vh;
   margin-top: 200px;
 }
 
@@ -20,16 +20,18 @@ body {
   display: flex;
   transition: all 1s ease;
   background-color: white;
+  align-items: center;
   color: #000;
   padding: 20px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 60px;
-  /* IMAGENS DA LOGO COM, OS HOVER DOS BOTÕES */
+  height: 100px;
+ 
 }
 
+/* IMAGENS DA LOGO COM, OS HOVER DOS BOTÕES */
 #header img {
   gap: 2rem;
   height: 70px;
@@ -61,13 +63,11 @@ body {
 /* ESTILO DO MENU COMO QUE ELE FICARIA */
 #menu {
   transition: all 1s;
-  height: 1px;
   left: 900px;
-  margin-top: 20px;
   background-color: #fff;
   padding: 20px;
   position: sticky;
-  top: 80px;
+  
   /* ALTURA DO CABEÇALHO */
 }
 
@@ -161,23 +161,23 @@ body {
 
 }
 
-.search-box-input::placeholder {
-
+.search-box-input::placeholder{
+  padding-left: 7px;
   color: #ffffff;
   opacity: 0.6;
 }
 
 /* CORES DO PLACEHOLDER  */
 .search-box-input::-webkit-input-placeholder {
-  color: #ffffff;
+  color: var(--color-neutral-30);
 }
 
 .search-box-input::-moz-placeholder {
-  color: #ffffff;
+  color: var(--color-neutral-30);
 }
 
 .search-box-input:-ms-input-placeholder {
-  color: #ffffff;
+  color: var(--color-neutral-30);
 }
 
 .search-box form {
@@ -188,10 +188,7 @@ body {
 }
 
 .search-box:hover .search-box-input {
-
-  padding-left: 2em;
-  padding-right: 1em;
-  width: 250px;
+  width: 350px;
 }
 
 .scroll-black.search-box {
@@ -207,12 +204,11 @@ body {
   outline: 0;
   font-size: 1.2em;
   color: #9747FF;
-  width: 0;
-
-  padding: 0;
   border: none;
   background: none;
-  transition: .45s;
+  transition: 0.45s;
+  padding-left: 7px;
+  width: 250px;
 }
 
 /* BOTÕES */
@@ -250,11 +246,6 @@ body {
 
 /* FONT FAMILY GERAL */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-* {
-    font-family: 'Poppins', sans-serif;
-}
-
-/* @import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Poppins:ital,wght@1,300&display=swap); */
 
 :root{
     --color-neutral-0: #0e0c0c;
@@ -267,13 +258,7 @@ body {
 *{
     margin: 0;
     padding:0;
-}
-
-/* HEADER */
-header{
-    height:130px;
-    background-color: black;
-
+    font-family: 'Poppins', sans-serif;
 }
 
 /* CONTAINER DA PRIMEIRA METADE DA TELA */
@@ -385,16 +370,13 @@ header{
 /* BOTÃO DE ADICIONAR */
 .adicionar{
     margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     background-color: #000;
     color: #fff;
     font-weight: bolder;
-    padding:20px;
-    height:20px;
-    width:230px;
-    font-size:20px;
+    padding:15px;
+    width:250px;
+    font-size:16px;
 }
 
 /* CONTAINER CEP ENVIAR */
@@ -409,7 +391,7 @@ header{
     flex-direction: column;
     font-weight: bold;
     font-size:16px;
-     font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 /* CEP */
 #cep{
@@ -495,11 +477,6 @@ header{
     font-family: Poppins;
     letter-spacing: 1px;
     text-decoration: none;
-  }
-  
-  /* MAIN DO FOOTER SÓ DE BASE */
-  main{
-    height: 80vh;
   }
   
   /* ORGANIZAÇÃO DO FOOTER TAG */
