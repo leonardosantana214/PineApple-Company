@@ -61,13 +61,12 @@ form:hover{
     border-radius: 15px;
     display: inline-block;
     position: relative;
-    margin: 40px;
+    margin: auto;
     color: #fff;
     font-family:Poppins;
     font-size:20px;
     text-decoration: none;
     overflow: hidden;
-    margin-top: 0px;
     border: 2px solid #000;
     height: 50px;
     width: 160px;
@@ -118,7 +117,7 @@ body {
 /* CONTAINER INPUTS */
 .container{
     padding:20px;
-    margin-top:40px;
+    
 }
 
 /* CSS INPUT EMAIL E SENHA */
@@ -136,6 +135,7 @@ body {
     height: 20px;
     width: 90%;
     margin-top: 20px;
+    padding-bottom: 15px;
 }
 
 /* FOCUS PARA MUDAR A COR DA LINHA DIGITAÇÃO */
@@ -146,9 +146,9 @@ body {
 /* VÁLIDO E INVÁLIDO BORDER */
 .Mail:valid, .Password:valid{
     border-color:#00EF43;
-    border-top: solid 3px #00EF43;
-    border-right: solid 3px #00EF43;
-    border-left: solid 3px #00EF43;
+    border-top: solid 2px #00EF43;
+    border-right: solid 2px #00EF43;
+    border-left: solid 2px #00EF43;
     border-radius: 50px;
     transition: 1s;
     
@@ -164,6 +164,7 @@ body {
 /* CONTAINER DOS LINKS */
 .container_link{
     text-align: center;
+    margin-bottom: 50px;
 }
 
 /* WEBKIT PLACEHOLDER INPUT GERAL */

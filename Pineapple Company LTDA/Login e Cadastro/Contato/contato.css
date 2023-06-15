@@ -322,6 +322,7 @@ main{
     outline: 0;
 }
 
+/* FOCUS DO INPUT DO EMAIL */
 .input:focus{
     border-color: #9747FF;
     outline: 0;
@@ -359,6 +360,7 @@ main{
     transition: 0.7s;
 }
 
+/* LINK DO BOTÃO */
 .button a{
     text-decoration: none;
     font-size: 20px;
