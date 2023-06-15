@@ -3,10 +3,12 @@ body{
     font-family: 'Monomaniac One', sans-serif;
     transition: all 2s ease-in-out;
 }
+/* titulo */
 .F1 {
     color: #000;
     display: flex;
     justify-content: center;
+    margin-top: -57px;
 }
 .Texto{
     size: 100px;
@@ -22,34 +24,45 @@ body {
     height: auto;
     
 }
-.F2, .f4, .F3, .F5, .feminino, .Masculino, .nãobinario, .Generos, .A1, .T6, .Data, .estado, .T7, .T10, .t2, .numero{
-    font-size: 15px;
+
+/* texto dos inputs */
+.F2, .f4, .F3, .F5, .feminino, .Masculino, .nãobinario, .Generos, .A1, .T6, .Data, .estado, .T7, .T10, .numero{
+    font-size: 19px;
     color: #000;
     background-color: transparent;
 }
-.F2:hover, .f4:hover, .F3:hover, .F5:hover, .feminino:hover, .Masculino:hover, .nãobinario:hover, .Generos:hover, .A1:hover, .T6:hover, .Data:hover, .T7:hover, .numero:hover {
+.F2:hover, .f4:hover, .F3:hover, .F5:hover, .feminino:hover, .Masculino:hover, .A1:hover, .T6:hover, .Data:hover, .T7:hover, .numero:hover {
     color: #9747FF;
     background-color: transparent;
     
 }
-
-.rua:hover, .Nome:hover, .vila:hover, .city:hover, .Texto:hover, .estado:hover, .C1:hover, .C2:hover, .C3:hover, .feminino:hover, .Data:hover, .Rua:hover {
-    background-color: transparent;
-    transition: 1s;
-   
+.t2{
+    
+    font-size: 19px;
+    color: #9747FF;
+    
 }
+
+.T7{
+    margin-left: 0px;
+
+}
+.numero{
+    margin-left: 75px;
+}
+
 ::-webkit-input-placeholder{
     color: #9747FF
     
 }
-
+/* formulario */
 form {
     border: solid 10px #000;
     position: relative;
     bottom: -0px;
     margin: auto;
     padding: 60px;
-    width: 450px;
+    width: 500px;
     background-color: white;
     transition: 1s;
     height: 550px;
@@ -67,12 +80,13 @@ form:hover {
     opacity: 0,6;
 }
 
+/* botão para enviar os dados */
 .t3 {
         color: white;
         font-family: monospace;
         background-color: black;
         transition: 1s;
-        width: 130px;
+        width: 145px;
         height: 40px;
         border-radius: 10px;
         border: none;
@@ -80,6 +94,9 @@ form:hover {
         align-items: center;
         justify-content: center;
         position: relative;
+        margin-left: 70px;
+        font-size: 18px;
+        margin-top: 0px;
 }
 .t3:hover {
     background-color: #9747FF;
@@ -303,13 +320,12 @@ form:hover {
     outline-width: 2px;
     transition: all 1s;
 }
-/* linhas dos input */
+/* linhas dos inputs */
 .rua, .Nome, .vila, .city, .Texto, .estado, .nascimento, .C1, .C2, .C3, .feminino, .Data, .estado {
     border: 1px solid #000;
     border-top: none;
     border-left: none;
     border-right: none;
-    transition: 1s;
     transition: 1s;
     font-size: 15px;
 }
@@ -364,7 +380,9 @@ textarea:focus, input:focus {
     outline: 0;
 }
 .t2:hover{
-    color: #9747FF;
+    transition: 1s;
+    text-decoration: underline #9747FF;
+    
 }
 
 
