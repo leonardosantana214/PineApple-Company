@@ -1,8 +1,10 @@
-@import url('https://fonts.cdnfonts.com/css/monomaniac-one');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 body{
     font-family: 'Monomaniac One', sans-serif;
     transition: all 2s ease-in-out;
 }
+
+
 /* titulo */
 .F1 {
     color: #000;

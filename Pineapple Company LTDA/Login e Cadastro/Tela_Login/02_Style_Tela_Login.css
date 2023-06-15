@@ -1,35 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 /* CONFIGURAÇAO GERAL PAGINA */
-*{
+* {
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
 
 /* CONTAINER FAIXA PINE_SPORTS */
-header nav .faixa_pine{
-    height:120px;
-    width:100%;
+header nav .faixa_pine {
+    height: 120px;
+    width: 100%;
     background-color: black;
     display: flex;
     align-items: center;
 }
 
 /* LOGOTIPO */
-.pineapple{
-    margin-left:30px;
-    height:80px;
-    width:80px;
+.pineapple {
+    margin-left: 30px;
+    height: 80px;
+    width: 80px;
 }
 
 /* PINE_SPORTS */
-.pine_sports{
+.pine_sports {
     font-family: Poppins;
-    font-size:30px;
-    color:white;
+    font-size: 30px;
+    color: white;
     letter-spacing: 2px;
     margin-left: 15px;
-    
+
 }
 
 
@@ -45,38 +45,38 @@ form {
     color: #9747FF;
     transition: 1s;
     border-radius: 15px;
-    padding:0;
-    
+    padding: 0;
+
 }
 
 /* HOVER FORMULÁRIO */
-form:hover{
+form:hover {
     box-shadow: 0 0 50px #9747FF, 0 0 70px #9747FF;
-    background-color: #fff ;
+    background-color: #fff;
 }
 
 /* BOTÃO NEON */
 .bntneon {
-    padding: 4px solid;
-    border-radius: 15px;
-    display: inline-block;
-    position: relative;
-    margin: auto;
-    color: #fff;
-    font-family:Poppins;
-    font-size:20px;
-    text-decoration: none;
-    overflow: hidden;
-    border: 2px solid #000;
-    height: 50px;
-    width: 160px;
     background-color: #000;
+    margin: auto;
+    width: 30%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
 
 
 }
 
+.bntneon a {
+    color: #fff;
+    font-weight: 500;
+    font-family: Poppins, sans-serif;
+}
+
 /* BOTÃO NEON HOVER */
-.bntneon:hover{
+.bntneon:hover {
     background-color: #000;
     border: 2px #9747FF solid;
     color: white;
@@ -86,7 +86,7 @@ form:hover{
 }
 
 /* ACTIVE BOTÃO NEON */
-.bntneon:active{
+.bntneon:active {
     color: #fff;
     background: #9747FF;
 }
@@ -98,30 +98,31 @@ body {
     background-position: fixed center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    
+
 
 }
 
 /* TÍTULO FORMULÁRIO */
 .title {
     color: #000;
-    font-family: Poppins ;
+    font-family: Poppins;
     font-size: 36px;
     margin-top: 70px;
     text-align: center;
     margin: center;
     font-weight: lighter;
-    margin-top:30px;
+    margin-top: 30px;
 }
 
 /* CONTAINER INPUTS */
-.container{
-    padding:20px;
-    
+.container {
+    padding: 20px;
+
 }
 
 /* CSS INPUT EMAIL E SENHA */
-.Mail, .Password {
+.Mail,
+.Password {
     padding: 10px;
     padding-left: 20px;
     background-color: transparent;
@@ -139,50 +140,57 @@ body {
 }
 
 /* FOCUS PARA MUDAR A COR DA LINHA DIGITAÇÃO */
-.Mail:focus, .Password:focus{
+.Mail:focus,
+.Password:focus {
     border-color: #9747FF;
 }
 
 /* VÁLIDO E INVÁLIDO BORDER */
-.Mail:valid, .Password:valid{
-    border-color:#00EF43;
+.Mail:valid,
+.Password:valid {
+    border-color: #00EF43;
     border-top: solid 2px #00EF43;
     border-right: solid 2px #00EF43;
     border-left: solid 2px #00EF43;
     border-radius: 50px;
     transition: 1s;
-    
+
 }
 
 /* CSS LINKs */
-.esqueceu_senha, .conta{
+.esqueceu_senha,
+.conta {
     color: blue;
     font-family: Poppins;
-    font-size:15px;
+    font-size: 15px;
 }
 
 /* CONTAINER DOS LINKS */
-.container_link{
+.container_link {
     text-align: center;
     margin-bottom: 50px;
 }
 
 /* WEBKIT PLACEHOLDER INPUT GERAL */
 ::-webkit-input-placeholder {
-    color:#A5A2A2;
+    color: #A5A2A2;
     font-family: Poppins;
     font-size: 18px;
     margin-bottom: 5px;
 }
 
 /* HOVER LINKS "ESQUECEU A SENHA" E "CRIAR CONTA" */
-.conta:hover, .esqueceu_senha:hover, .conta:focus, .esqueceu_senha:focus {
+.conta:hover,
+.esqueceu_senha:hover,
+.conta:focus,
+.esqueceu_senha:focus {
     color: #000;
-    transform:translateX(1.2) scale(20px) ;
+    transform: translateX(1.2) scale(20px);
 }
 
 /* INPUT INVISÍVEL DO FOCUS */
-textarea:focus, input:focus {
+textarea:focus,
+input:focus {
     box-shadow: 0 0 0 0;
     outline: 0;
 }
@@ -190,7 +198,7 @@ textarea:focus, input:focus {
 
 /* FOOTER */
 /* CORES VARIÁVEIS DO FOOTER */
-:root{
+:root {
     --color-neutral-0: #0e0c0c;
     --color-neutral-10: #171717;
     --color-neutral-30: #a8a29e;
@@ -198,7 +206,7 @@ textarea:focus, input:focus {
 }
 
 /* RESET E CONFIG GERAIS DO FOOTER */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -208,12 +216,12 @@ textarea:focus, input:focus {
 }
 
 /* MAIN DO FOOTER SÓ DE BASE */
-main{
+main {
     height: 80vh;
 }
 
 /* ORGANIZAÇÃO DO FOOTER TAG */
-footer{
+footer {
     width: 100%;
     color: var(--color-neutral-40);
     text-decoration: none;
@@ -221,33 +229,33 @@ footer{
 }
 
 /* LINKS DO FOOTER, SEM SUBLINHAR */
-.footer-link{
+.footer-link {
     text-decoration: none;
 
 }
 
 /* CONTAINER GERAL DAS AREAS DE REDES SOCIAIS */
-#footer_content{
+#footer_content {
     background-color: var(--color-neutral-10);
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    padding: 3rem 3.5rem ;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
 }
 
 /* H1 TITULO PINEAPPLES COMPANY DA AREA DAS REDES SOCIAIS */
-#footer_contacts h1{
+#footer_contacts h1 {
     margin-bottom: 0.75rem;
 }
 
 /* CONTAINER DAS AREAS DAS REDES SOCIAIS*/
-#footer_social_media{
+#footer_social_media {
     display: flex;
     gap: 2rem;
     margin-top: 1.5rem;
 }
 
 /* CONFIG LINKS DE REDES SOCIAIS E CONTAINER */
-#footer_social_media .footer_link{
+#footer_social_media .footer_link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -260,34 +268,34 @@ footer{
 }
 
 /* LINKS DE REDES SOCIAIS */
-#footer_social_media .footer_link i{
+#footer_social_media .footer_link i {
     font-size: 1.25rem;
 
 }
 
 /* HOVER DOS LINKS REDES SOCIAIS */
-#footer_social_media .footer_link :hover{
+#footer_social_media .footer_link :hover {
     opacity: 0.8;
 }
 
 /* FUNDO DO ICON INSTAGRAM */
-#instagram{
-    background: linear-gradient(#7f37c9, #ff2992,#ff9807);
-   
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+
 }
 
 /* FUNDO ICON WHATSAPP */
-#whatsapp{
+#whatsapp {
     background-color: #13be1b;
 }
 
 /* FUNDO ICON TWITTER */
-#twitter{
+#twitter {
     background-color: rgb(0, 157, 255);
 }
 
 /* LISTA NAO ORDENADA BLOG */
-.footer_list{
+.footer_list {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
@@ -295,7 +303,7 @@ footer{
 }
 
 /* COR E TRANSIÇÃO NOS LINKS DE REDIRECIONAMENTO DO SITE */
-.footer_list .footer_link{
+.footer_list .footer_link {
     color: var(--color-neutral-30);
     transition: all 0.4s;
 }
@@ -306,15 +314,15 @@ footer{
 }
 
 /* CONTAINER DE INSCRIÇÃO */
-#footer_subscribe{
+#footer_subscribe {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
 /* PARÁGRAFOS DE INSCRIÇÃO */
-#footer_subscribe p{
-    color: var(--color-neutral-30); 
+#footer_subscribe p {
+    color: var(--color-neutral-30);
 
 }
 
@@ -324,7 +332,7 @@ footer{
 }
 
 /* CONTAINER DE INPUT PARA ENVIAR EMAIL */
-.input_group{
+.input_group {
     display: flex;
     align-items: center;
     background-color: var(--color-neutral-0);
@@ -332,33 +340,33 @@ footer{
 }
 
 /* INPUT PARA ENVIAR EMAIL */
-.input_group input{
+.input_group input {
     all: unset;
     padding: 0.75rem;
     width: 100%;
 }
 
 /* BOTÃO PARA ENVIAR EMAIL */
-.input_group button{
+.input_group button {
     background-color: #7f37c9;
     color: var(--color-neutral-40);
     border: none;
     font-size: 1.125rem;
     padding: 0px 1.12rem;
     height: 100%;
-    border-radius:  0px 4px 4px 0px;
+    border-radius: 0px 4px 4px 0px;
     cursor: pointer;
     transition: all 0.4s;
 
 }
 
 /* HOVER BOTÃO DE ENVIAR EMAIL */
-.input_group button :hover{
+.input_group button :hover {
     opacity: 0.8;
 }
 
 /* COPYRIGHT EMBAIXO NO FOOTER */
-#footer_copyright{
+#footer_copyright {
     display: flex;
     justify-content: center;
     background-color: var(--color-neutral-0);
