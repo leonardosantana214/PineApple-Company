@@ -313,18 +313,18 @@ main{
 
 /* VÁLIDO */
 .input:valid{
-    border-top: 1px solid #13be1b;
-    border-right: 1px solid #13be1b;
-    border-left: 1px solid #13be1b;
+    border-top: 2px solid #12ff35;
+    border-right: 2px solid #12ff35;
+    border-left: 2px solid #12ff35;
+    border-bottom: 2px solid #12ff35;
     border-radius: 50px;
     transition: 0.5s;
+    outline: 0;
 }
 
 .input:focus{
     border-color: #9747FF;
-    border-top:none;
-    border-right: none;
-    border-left: none;
+    outline: 0;
 }
 
 /* PLACEHOLDER DO INPUT */
@@ -367,8 +367,12 @@ main{
     
 }
 
-.button p{
+.button a p{
     font-size: 20px;
+    color: #fff;
+}
+.button a{
+    text-decoration: none;
 }
 
 /* RODAPÉ */
