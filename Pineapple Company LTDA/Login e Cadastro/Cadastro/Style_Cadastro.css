@@ -26,7 +26,7 @@ body {
 }
 
 /* texto dos inputs */
-.F2, .f4, .F3, .F5, .feminino, .Masculino, .nãobinario, .Generos, .A1, .T6, .Data, .estado, .T7, .T10, .t2, .numero{
+.F2, .f4, .F3, .F5, .feminino, .Masculino, .nãobinario, .Generos, .A1, .T6, .Data, .estado, .T7, .T10, .numero{
     font-size: 19px;
     color: #000;
     background-color: transparent;
@@ -35,6 +35,20 @@ body {
     color: #9747FF;
     background-color: transparent;
     
+}
+.t2{
+    
+    font-size: 19px;
+    color: #9747FF;
+    
+}
+
+.T7{
+    margin-left: 0px;
+
+}
+.numero{
+    margin-left: 75px;
 }
 
 ::-webkit-input-placeholder{
@@ -48,7 +62,7 @@ form {
     bottom: -0px;
     margin: auto;
     padding: 60px;
-    width: 450px;
+    width: 500px;
     background-color: white;
     transition: 1s;
     height: 550px;
@@ -66,12 +80,13 @@ form:hover {
     opacity: 0,6;
 }
 
+/* botão para enviar os dados */
 .t3 {
         color: white;
         font-family: monospace;
         background-color: black;
         transition: 1s;
-        width: 130px;
+        width: 145px;
         height: 40px;
         border-radius: 10px;
         border: none;
@@ -79,7 +94,9 @@ form:hover {
         align-items: center;
         justify-content: center;
         position: relative;
-        margin-left: 50px;
+        margin-left: 70px;
+        font-size: 18px;
+        margin-top: 0px;
 }
 .t3:hover {
     background-color: #9747FF;
@@ -303,13 +320,12 @@ form:hover {
     outline-width: 2px;
     transition: all 1s;
 }
-/* linhas dos input */
+/* linhas dos inputs */
 .rua, .Nome, .vila, .city, .Texto, .estado, .nascimento, .C1, .C2, .C3, .feminino, .Data, .estado {
     border: 1px solid #000;
     border-top: none;
     border-left: none;
     border-right: none;
-    transition: 1s;
     transition: 1s;
     font-size: 15px;
 }
@@ -364,7 +380,9 @@ textarea:focus, input:focus {
     outline: 0;
 }
 .t2:hover{
-    color: #9747FF;
+    transition: 1s;
+    text-decoration: underline #9747FF;
+    
 }
 
 
