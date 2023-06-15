@@ -197,6 +197,44 @@
             </a>
             <br>
           </section>
+          <section class="produtos">
+            <a href="#">
+              <p>
+                <img src="https://d2r9epyceweg5n.cloudfront.net/stores/002/322/390/products/chuteira-mercurial-superfly-elite-campo-011-f1e9ce24dce7da9a5816733244940648-640-0.jpeg" alt="">
+                <section class="cart">
+                  <button><i class="fa-solid fa-cart-shopping"></i></button>
+                </section>
+                <br> <hr>
+                <div class="frete">Frete Grátis</div>
+                Chuteira Nike Official <br> Mbappe France world Cup <br>
+              
+                <div class="sub"><s> R$600,00 </s></div>
+                <span>R$450,00</span> <br>
+                  10x de R$45,00
+              </p>
+            </a>
+            <br>
+          </section>
+          <section class="produtos">
+            <a href="#">
+              <p>
+                <img src="https://d2r9epyceweg5n.cloudfront.net/stores/002/322/390/products/chuteira-mercurial-superfly-elite-campo-011-f1e9ce24dce7da9a5816733244940648-640-0.jpeg" alt="">
+                <section class="cart">
+                  <button><i class="fa-solid fa-cart-shopping"></i></button>
+                </section>
+                <br> <hr>
+                <div class="frete">Frete Grátis</div>
+                Chuteira Nike Official <br> Mbappe France world Cup <br>
+              
+                <div class="sub"><s> R$600,00 </s></div>
+                <span>R$450,00</span> <br>
+                  10x de R$45,00
+              </p>
+            </a>
+            <br>
+          </section>
+
+
     </section>
     <br><br>
     <hr>
@@ -205,13 +243,13 @@
 
           <section class="world-cup">
 
-              <section class="banner-wrld-cup">
+              <section class="banner-NBA-cup">
                   <img src="https://wallpapercave.com/dwp1x/wp2552679.jpg" alt="Banner das Mulheres">
 
               </section>
-              <section class="text-wrld-cup">
+              <section class="text-NBA-cup">
                   <p>
-                       <span>MARTA</span> <br> 
+                    <img src="img/Logo_NBA.png" alt="">
 
                   </p>
               </section>
@@ -221,18 +259,37 @@
 
           <section class="video-colossal">
                 <section class="vd-colossal">
-                      <img src="https://wallpapercave.com/wp/wp4966901.jpg" alt="marta"  style="--g: 20px;--b:5px;--c:#9747FF;">
+                  <section class="circulo"></section>
+                  <div class="box">
+
+                    <video src="Source/Lebrom_James.mp4" type="video/mp4"  autoplay ></video>
+
+                  </div>
+                        
                 </section>
 
                 <!-- ESCOLHAS DE CLIQUE -->
                 
                 <section class="text-colossal">
-                     <ul class="list-colossal">
-                        <li><img src="img/kisspng-ballon-d-or-2017-2014-fifa-ballon-d-or-ballon-d-or-balon-5ac2f121a2d373.893728001522725153667.png" alt="bola d outros" onclick="trocaimg('img/marta1.jpg')"></li>
-                        <li><img src="https://wallpapercave.com/dwp1x/wp5556592.jpg" alt="bola d outros" onclick="trocaimg('https:wallpapercave.com/dwp1x/wp5556592.jpg')"></li>
-                        <li><img src="img/kisspng-ballon-d-or-2017-2014-fifa-ballon-d-or-ballon-d-or-balon-5ac2f121a2d373.893728001522725153667.png" alt="bola d outros" onclick="trocaimg('img/marta3.jpg')"></li>
-                     </ul>
-                </section>
+                     <section class="collosal-list">
+                       <ul class="list-colossal">
+                       
+                             <li><img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a9f21021139193.562fc239216ce.jpg" alt="bola d outros" onclick="trocaimg('source/Lebrom_James.mp4'); BorderColor('8px solid #9747FF '); FormasColor('#9747FF'); BorderBox('#9747FF'); FormaColor('#9747FF');mudarCor(' 0 0 5px #9747FF, 0 0 20px #9747FF, 0 0 35px #9747FF');"></li>
+
+
+
+                          <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTfJDTTvwWxj_--CvGNoLQcot2wVaHzuKfoWZeAeON&s" alt="bola d outros" onclick="trocaimg('source/celtics.mp4'); BorderColor('8px solid #008692'); FormasColor('#008692'); FormaColor('#008692'); mudarCor(' 0 0 5px #008692, 0 0 20px #008692, 0 0 35px #008692')"></li>
+
+
+
+                          <li><img src="https://wallpaperaccess.com/full/1249319.jpg" alt="bola d outros" onclick="trocaimg('source/Cury.mp4'); BorderColor('8px solid #4169e1'); FormasColor('#4169e1'); FormaColor('#4169e1'); mudarCor(' 0 0 5px #4169e1, 0 0 20px #4169e1, 0 0 35px #4169e1')"></li>
+                       </ul>
+                     </section>
+
+                     <!-- CIRCULOS QUE VÃO MUDAR DE COR COM OS CLIQUES -->
+
+                    
+
 
                 <!-- SCRIPT DAS ESCOLHAS -->
 
@@ -240,9 +297,16 @@
 
                   <script>
                       function trocaimg(anythings) {
-                        document.querySelector('.vd-colossal img').src = anythings;
+                        document.querySelector('.vd-colossal video').src = anythings;
                       }
-                     
+                     function BorderColor(color){
+                      const borda =document.querySelector('.list-colossal li:hover');
+                      borda.style.outline = color;
+                     }
+                     function FormasColor(color){
+                      const Formas =document.querySelector('.circulo');
+                      Formas.style.background = color;
+                     }
                   </script>
 
                 </section>
