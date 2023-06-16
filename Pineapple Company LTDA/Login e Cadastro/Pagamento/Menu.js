@@ -10,5 +10,3 @@ window.addEventListener('scroll', function() {
       menu.classList.remove('scrolled');
     }
   });
-
- 
