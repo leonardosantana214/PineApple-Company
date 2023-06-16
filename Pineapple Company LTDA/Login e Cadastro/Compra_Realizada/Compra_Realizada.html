@@ -11,12 +11,99 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<header id="header">
 
+    <!-- LOGO DA PINEAPPLE (LOGO DO LOGIN) -->
+
+  <a href="#"><img src="img/Pineapple_logo_Roxo.png" alt=""></a>
+
+        <!-- NAV DO MENU -->
+  
+          <nav id="menu"> 
+      
+            <!-- LISTA DOS BOTÕES -->
+
+            <ul>
+              
+              <!-- HOME -->
+              <li><a href="#">HOME</a></li>
+
+              <!-- MENUDROP, PARA APARECER AS OPÇÕES DE COMPRAS NO MEU -->
+
+              <!-- ITENS DOS MENUDRÓP -->
+
+              <li class="dropdown">
+
+                <!-- EQUIPAMENTOS -->
+
+                <a href="#">EQUIPAMENTOS</a>
+
+                <!-- ITENS DO MENUDROP -->
+
+                <div class="dropdown-content">
+
+                  <!-- FUTEBOL -->
+
+                  <a href="#">FUTEBOL</a>
+
+                  <!-- EQUIPAMENTOS DE BASQUETE -->
+
+                  <a href="#">BASQUETE</a>
+
+                  <!-- CORRIDA -->
+
+                  <a href="#">CORRIDA</a>
+
+
+                </div>
+              </li>
+              <!-- OUTLET -->
+
+              <li><a href="#">OUTLET</a></li>
+
+              <!-- CONTATO -->
+
+              <li><a href="#">CONTATE-NOS</a></li>
+
+              <!-- SOBRE-NÓS -->
+
+              <li><a href="#">SOBRE-NÓS</a></li>
+
+              <li>
+
+
+
+              <!-- CARRINHO -->
+              
+              <li><a href="#"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+
+              <li class="dropdown">
+
+              <!-- CONTA LOGAR OU CADASTRO -->
+
+              <a><i class="fa-solid fa-user"></i></a>
+
+              </div>
+            </li>
+            </ul>
+          </nav>
+</header>
+<script> window.addEventListener('scroll', function() {
+
+    var menu = document.getElementById('menu');
+    var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+//   É PRA SABER SE O SCROLL DESCEU OU NÃO
+    if (scrollPosition > 0) {
+      menu.classList.add('scrolled');
+    } else {
+      menu.classList.remove('scrolled');
+    }
+  });</script>
 <body>
-    <div class="text">
-        <p class="confirmada">Compra confirmada</p> <br><br>
+    <div class="text"> <br> <br>
+        <p class="confirmada">Compra confirmada</p> <br>
         <div class="check"><i class="fa-regular fa-circle-check" style="color: #ffffff;"></i></div>
-        <p class="sucesso">A compra foi realizada com sucesso</p> <br><br>
+        <p class="sucesso">A compra foi realizada com sucesso</p> 
         <a href="Pagina Inicial.html" class="home">Home</a>
     </div> <br><br><br><br>
     <footer>
