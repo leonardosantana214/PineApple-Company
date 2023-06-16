@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contato.css">
+    <script src="Menu.js"></script>
     <title>Contate-nos</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -16,42 +17,89 @@
 
     <!-- MENU DO SITE HEADER NAV (PARA OS BOTÕES) -->
     <header id="header">
+<!-- MENU DO SITE HEADER NAV (PARA OS BOTÕES) -->
 
-        <!-- LOGO DA PINEAPPLE (LOGO DO LOGIN) -->
-        <a href="#"><img src="img/Pineapple_logo_Roxo.png" alt=""></a>
+<header id="header">
+
+    <!-- LOGO DA PINEAPPLE (LOGO DO LOGIN) -->
+
+  <a href="#"><img src="img/Pineapple_logo_Roxo.png" alt=""></a>
 
         <!-- NAV DO MENU -->
-
-        <nav id="menu">
-
+  
+          <nav id="menu"> 
+      
             <!-- LISTA DOS BOTÕES -->
+
             <ul>
-                <li>
-                    <a href="PaginaInicial.html">Pine_Sports</a>
-                </li>
+              
+              <!-- HOME -->
+              <li><a href="#">HOME</a></li>
+
+              <!-- MENUDROP, PARA APARECER AS OPÇÕES DE COMPRAS NO MEU -->
+
+              <!-- ITENS DOS MENUDRÓP -->
+
+              <li class="dropdown">
+
+                <!-- EQUIPAMENTOS -->
+
+                <a href="#">EQUIPAMENTOS</a>
+
+                <!-- ITENS DO MENUDROP -->
+
+                <div class="dropdown-content">
+
+                  <!-- FUTEBOL -->
+
+                  <a href="#">FUTEBOL</a>
+
+                  <!-- EQUIPAMENTOS DE BASQUETE -->
+
+                  <a href="#">BASQUETE</a>
+
+                  <!-- CORRIDA -->
+
+                  <a href="#">CORRIDA</a>
+
+
+                </div>
+              </li>
+              <!-- OUTLET -->
+
+              <li><a href="#">OUTLET</a></li>
+
+              <!-- CONTATO -->
+
+              <li><a href="#">CONTATE-NOS</a></li>
+
+              <!-- SOBRE-NÓS -->
+
+              <li><a href="#">SOBRE-NÓS</a></li>
+
+              <li>
+
+
+
+              <!-- CARRINHO -->
+              
+              <li><a href="#"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+
+              <li class="dropdown">
+
+              <!-- CONTA LOGAR OU CADASTRO -->
+
+              <a><i class="fa-solid fa-user"></i></a>
+
+              </div>
+            </li>
             </ul>
+          </nav>
+</header>
     </header>
 
     <!-- JAVASCRIPT DO MENU -->
-    <script>
 
-        // QUANDO DESCER A SCROLLBAR TROCAR AS CORES DO SITE
-        window.addEventListener("scroll", function () {
-
-            // VARIAVEIS PARA A TROCAR DE CORES (ELES ESTÃO LINKADOS NO CSS)
-            var header = document.getElementById("header");
-            var menu = document.getElementById("menu");
-
-            // AQUI É PARA SABER SE DESCEU OU NÃO IF PARA TROCAR A COR E ELSE PARA NÃO TROCAR
-            if (window.scrollY > 0) {
-                header.classList.add("scroll-black");
-                menu.classList.add("scroll-black");
-            } else {
-                header.classList.remove("scroll-black");
-                menu.classList.remove("scroll-black");
-            }
-        });
-    </script>
 
     <!-- MAIN -->
     <main>
