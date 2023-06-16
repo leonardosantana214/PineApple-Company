@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="JavadoCadastro.js"></script>
+        <title>Cadastro</title>
+        <link rel="stylesheet" href="Style_Cadastro.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+    <body onload="">
+
+        <!-- TELA DE CARREGAMENTO TELA 1 -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+    </div>
+    <!-- TELA DE CARREGAMENTO TELA 2 FADE -->
+    <div class="segunda">
+
+    </div>
+
+        <div id="content" style="display: none">
+
+            <!-- INFORMAÇÕES -->
+        
+            <form action="01_Tela de Login.Html" method="post">
+
+                <!-- CADASTRO -->
+                <div class="cadastro">
+                    
+                    <h1 class="F1">Cadastro</h1> <br>
+
+                    <!-- NOME -->
+                    <div class="input">
+                        <div class="F2">Nome 
+                            <br>
+                            <input type="" name="nome" class="Nome" autocomplete="off" id="o2" required>
+                        </div>
+                    </div>
+
+                    <!-- ENDEREÇO -->
+                    <span class="F3">
+                        Endereço 
+                        <br> 
+                        <input type="text" name="endereço" id="" class="rua" autocomplete="off" id="o2" required>
+                    <span>
+
+                    <span class="numero">
+                         Nª 
+                        <input type="number" name="endereço" id="" class="number" maxlength="7" id="o2" required>
+                    </span>
+
+                    <!-- BAIRRO -->
+                    <div class="input">
+                        <p class="f4">
+                            Bairro 
+                            <br> 
+                            <input type="text" name="Bairro" id="" class="vila"autocomplete="off" id="o2"required>
+                        </p>
+                    </div>
+
+                    <!-- CIDADE -->
+                    <div class="input">
+                        <p class="F5">
+                            Cidade 
+                            <br> 
+                            <input type="text" name="cidade" class="city"autocomplete="off" id="o2"required>
+                        </p>
+                    </div>
+
+                    <!-- EMAIL -->
+                    <div class="input">
+                        <div class="A1"> 
+                            E-mail
+                        </div>
+
+                        <input type="email" class="Texto"autocomplete="off" id="o2" required> 
+                        <br>
+                    </div>
+
+                    <!-- SENHA -->
+                    <div class="input">
+                        <div class="A1">
+                            Senha
+                        </div>
+                        <input type="password" class="Texto"autocomplete="off"id="o2" required> <br>
+                    </div> <br>
+                    <!-- ESTADOS -->
+                    <div class="input">
+                        <div class="T7">Escolha o estado:
+                            <select class="estado"required> 
+                                <option value="estados">-- -- </option>
+                                <option value="estados">Acre </option>
+                                <option value=""> Alagoas</option>
+                                <option value="">Amapá</option>
+                                <option value="">Amazonas</option>
+                                <option value="">Bahia</option>
+                                <option value="">Ceará</option>
+                                <option value="">Distrito Federal</option>
+                                <option value="">Espírito Santo</option>
+                                <option value="">Goiás</option>
+                                <option value="">Maranhão</option>
+                                <option value="">Mato Grosso</option>
+                                <option value="">Mato Grosso do Sul</option>
+                                <option value="">Minas Gerais</option>
+                                <option value="">Pará</option>
+                                <option value="">Paraíba</option>
+                                <option value="">Paraná</option>
+                                <option value="">Pernambuco</option>
+                                <option value="">Piauí</option>
+                                <option value="">Rio de Janeiro</option>
+                                <option value="">Rio Grande do Norte</option>
+                                <option value="">Rio Grande do Sul</option>
+                                <option value="">Rondônia</option>
+                                <option value="">Roraima</option>
+                                <option value="">Santa Catarina</option>
+                                <option value="">São Paulo</option>
+                                <option value="">Sergipe</option>
+                                <option value="">Tocantins</option>
+                            </select>
+                        </div>
+                    </div> <br>
+                    <div class="termos">
+                        <span>
+                            <input type="checkbox" name="aceita os usos" class="t1" id="o1" required> 
+                        </span>
+                        <span class="T10">
+                            Aceito os <a href="Termos\Termos.html" class="t2">Termos</a> de uso do site
+                        </span>
+                    </div>
+                    <!-- ENVIAR DADOS -->
+                    <div class="button">
+                        <button class="t3">Enviar dados</button> 
+                    </div>           
+            </form>
+        </div> <br><br>
+        <footer>
+
+            <!-- DIV PRINCIPAL DO FOOTER -->
+            <div id="footer_content">
+                <div id="footer_contacts">
+                    <a href="" class="footer_link" id="pineapple">
+                        <i class="fa-sharp fa-light fa-pineapple"></i>
+                    </a>
+                    <p>Pineapple's Company</p>
+
+                    <!-- REDES SOCIAIS -->
+                    <div id="footer_social_media">
+                        <a href="" class="footer_link" id="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="" class="footer_link" id="whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+
+                        <a href="" class="footer_link" id="twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- BLOG -->
+                <ul class="footer_list">
+                    <li>
+                        <h3>Página inicial</h3>
+                    </li>
+                    <li>
+                        <a href="" class="footer_link">Lançamentos</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer_link">Moda</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer_link">Promoções</a>
+                    </li>
+                </ul>
+
+                <!-- PRODUTOS -->
+                <ul class="footer_list">
+                    <li>
+                        <h3>Produtos</h3>
+                    </li>
+                    <li>
+                        <a href="" class="footer_link">Outlet</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer_link">Esportes</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer_link">Galeria</a>
+                    </li>
+                </ul>
+
+                <!-- INSCREVA-SE -->
+                <div id="footer_subscribe">
+                    <h3>Login/Cadastro</h3>
+                    <p>Entre com seu e-mail para se inscrever e receber nossas promoções</p>
+
+                    <!-- INSERIR EMIAL DE INSCRIÇÃO -->
+                    <div class="input_group">
+                        <input type="email" id="email">
+                        <button>
+                            <i class="fa-regular fa-envelope"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COPYRIGHT -->
+            <div id="footer_copyright">
+                &copy;
+                2023 Todos os direitos reservados.
+            </div>
+        </footer>
+    </body>
+</html>
