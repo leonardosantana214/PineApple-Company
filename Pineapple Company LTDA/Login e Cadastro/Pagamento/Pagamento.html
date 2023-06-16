@@ -13,121 +13,97 @@
             integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
+    <header>
+        <header id="header">
 
-    <body>
-        <header>
-            <!-- MENU DO SITE HEADER NAV (PARA OS BOTÕES) -->
-
-  <header id="header">
-
-    <!-- LOGO DA PINEAPPLE (LOGO DO LOGIN) -->
-
-  <a href="#"><img src="img/Pineapple_logo_Roxo.png" alt=""></a>
-
-        <!-- NAV DO MENU -->
-  
-          <nav id="menu"> 
-      
-            <!-- LISTA DOS BOTÕES -->
-
-            <ul>
+            <!-- LOGO DA PINEAPPLE (LOGO DO LOGIN) -->
+        
+          <a href="#"><img src="img/Pineapple_logo_Roxo.png" alt=""></a>
+        
+                <!-- NAV DO MENU -->
+          
+                  <nav id="menu"> 
               
-              <!-- HOME -->
-              <li><a href="#">HOME</a></li>
-
-              <!-- MENUDROP, PARA APARECER AS OPÇÕES DE COMPRAS NO MEU -->
-
-              <!-- ITENS DOS MENUDRÓP -->
-
-              <li class="dropdown">
-
-                <!-- EQUIPAMENTOS -->
-
-                <a href="#">EQUIPAMENTOS</a>
-
-                <!-- ITENS DO MENUDROP -->
-
-                <div class="dropdown-content">
-
-                  <!-- FUTEBOL -->
-
-                  <a href="#">FUTEBOL</a>
-
-                  <!-- EQUIPAMENTOS DE BASQUETE -->
-
-                  <a href="#">BASQUETE</a>
-
-                  <!-- CORRIDA -->
-
-                  <a href="#">CORRIDA</a>
-
-
-                </div>
-              </li>
-              <!-- OUTLET -->
-
-              <li><a href="#">OUTLET</a></li>
-
-              <!-- CONTATO -->
-
-              <li><a href="#">CONTATE-NOS</a></li>
-
-              <!-- SOBRE-NÓS -->
-
-              <li><a href="#">SOBRE-NÓS</a></li>
-
-              <li>
-                  <!-- SEARCH -->
-
-                <div class="box-busca">
-
-                    <!-- FORMULARIOSINHO -->
-
-                  <div class="search-box">
+                    <!-- LISTA DOS BOTÕES -->
+        
+                    <ul>
                       
-                    <!-- METODO POST -->
-
-                      <form method="post">
-
-                          <!-- INPUT DO SEARCH -->
-
-                          <input type="search" class="search-box-input" name="busca" placeholder="Faça sua Pesquisa">
-
-                        <!-- BOTÃO DO SEARCHING -->
-
-                          <button class="search-box-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                      <!-- HOME -->
+                      <li><a href="#">HOME</a></li>
+        
+                      <!-- MENUDROP, PARA APARECER AS OPÇÕES DE COMPRAS NO MEU -->
+        
+                      <!-- ITENS DOS MENUDRÓP -->
+        
+                      <li class="dropdown">
+        
+                        <!-- EQUIPAMENTOS -->
+        
+                        <a href="#">EQUIPAMENTOS</a>
+        
+                        <!-- ITENS DO MENUDROP -->
+        
+                        <div class="dropdown-content">
+        
+                          <!-- FUTEBOL -->
+        
+                          <a href="#">FUTEBOL</a>
+        
+                          <!-- EQUIPAMENTOS DE BASQUETE -->
+        
+                          <a href="#">BASQUETE</a>
+        
+                          <!-- CORRIDA -->
+        
+                          <a href="#">CORRIDA</a>
+        
+        
+                        </div>
+                      </li>
+                      <!-- OUTLET -->
+        
+                      <li><a href="#">OUTLET</a></li>
+        
+                      <!-- CONTATO -->
+        
+                      <li><a href="#">CONTATE-NOS</a></li>
+        
+                      <!-- SOBRE-NÓS -->
+        
+                      <li><a href="#">SOBRE-NÓS</a></li>
+        
+                      <li>
+        
+        
+        
+                      <!-- CARRINHO -->
                       
-                      </form>
-                      
-                  </div>
-                  
-                  <!-- SEARCH -->
-              
-              </div>
-
-              <!-- BOX BUSCA-->
-              </li>
-
-
-
-              <!-- CARRINHO -->
-              
-              <li><a href="#"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
-
-              <li class="dropdown">
-
-              <!-- CONTA LOGAR OU CADASTRO -->
-
-              <a><i class="fa-solid fa-user"></i></a>
-
-              </div>
-            </li>
-            </ul>
-          </nav>
-</header>
-
+                      <li><a href="#"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+        
+                      <li class="dropdown">
+        
+                      <!-- CONTA LOGAR OU CADASTRO -->
+        
+                      <a><i class="fa-solid fa-user"></i></a>
+        
+                      </div>
+                    </li>
+                    </ul>
+                  </nav>
         </header>
-        <main>
+        <script> window.addEventListener('scroll', function() {
+    
+            var menu = document.getElementById('menu');
+            var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+        //   É PRA SABER SE O SCROLL DESCEU OU NÃO
+            if (scrollPosition > 0) {
+              menu.classList.add('scrolled');
+            } else {
+              menu.classList.remove('scrolled');
+            }
+          });</script>
+    <body>
+        <main> <br> <br>
             <!-- colocar a página de confirmação de compra depois -->
             <form action="compra_realizada.html" method="post" class="texto">
                 <div class="Inputs">
