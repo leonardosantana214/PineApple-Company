@@ -163,6 +163,7 @@ section {
   justify-content: center;
   font-size: 25px;
   width: 100%;
+  gap: 30px;
 }
 
 .extra img {
@@ -181,7 +182,7 @@ section {
   flex-direction: row;
   padding: 20px;
   margin-top: 120px;
-
+  gap: 50px;
 
 }
 
@@ -478,33 +479,33 @@ section {
 }
 
 /* LINKS DO FOOTER, SEM SUBLINHAR */
-.footer-link {
+.footer_link{
   text-decoration: none;
 
 }
 
 /* CONTAINER GERAL DAS AREAS DE REDES SOCIAIS */
-#footer_content {
+#footer_content{
   background-color: var(--color-neutral-10);
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  padding: 3rem 3.5rem;
+  grid-template-columns: repeat(4,1fr);
+  padding: 3rem 3.5rem ;
 }
 
 /* H1 TITULO PINEAPPLES COMPANY DA AREA DAS REDES SOCIAIS */
-#footer_contacts h1 {
+#footer_contacts h1{
   margin-bottom: 0.75rem;
 }
 
 /* CONTAINER DAS AREAS DAS REDES SOCIAIS*/
-#footer_social_media {
+#footer_social_media{
   display: flex;
   gap: 2rem;
   margin-top: 1.5rem;
 }
 
 /* CONFIG LINKS DE REDES SOCIAIS E CONTAINER */
-#footer_social_media .footer_link {
+#footer_social_media .footer_link{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -513,38 +514,38 @@ section {
   color: var(--color-neutral-40);
   border-radius: 50%;
   transition: all 0.4s;
-
+  text-decoration: none;
 }
 
 /* LINKS DE REDES SOCIAIS */
-#footer_social_media .footer_link i {
+#footer_social_media .footer_link i{
   font-size: 1.25rem;
 
 }
 
 /* HOVER DOS LINKS REDES SOCIAIS */
-#footer_social_media .footer_link :hover {
+#footer_social_media .footer_link :hover{
   opacity: 0.8;
 }
 
 /* FUNDO DO ICON INSTAGRAM */
-#instagram {
-  background: linear-gradient(#7f37c9, #ff2992, #ff9807);
-
+#instagram{
+  background: linear-gradient(#7f37c9, #ff2992,#ff9807);
+ 
 }
 
 /* FUNDO ICON WHATSAPP */
-#whatsapp {
+#whatsapp{
   background-color: #13be1b;
 }
 
 /* FUNDO ICON TWITTER */
-#twitter {
+#twitter{
   background-color: rgb(0, 157, 255);
 }
 
 /* LISTA NAO ORDENADA BLOG */
-.footer_list {
+.footer_list{
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
@@ -552,7 +553,7 @@ section {
 }
 
 /* COR E TRANSIÇÃO NOS LINKS DE REDIRECIONAMENTO DO SITE */
-.footer_list .footer_link {
+.footer_list .footer_link{
   color: var(--color-neutral-30);
   transition: all 0.4s;
 }
@@ -563,15 +564,15 @@ section {
 }
 
 /* CONTAINER DE INSCRIÇÃO */
-#footer_subscribe {
+#footer_subscribe{
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
 /* PARÁGRAFOS DE INSCRIÇÃO */
-#footer_subscribe p {
-  color: var(--color-neutral-30);
+#footer_subscribe p{
+  color: var(--color-neutral-30); 
 
 }
 
@@ -581,7 +582,7 @@ section {
 }
 
 /* CONTAINER DE INPUT PARA ENVIAR EMAIL */
-.input_group {
+.input_group{
   display: flex;
   align-items: center;
   background-color: var(--color-neutral-0);
@@ -589,21 +590,21 @@ section {
 }
 
 /* INPUT PARA ENVIAR EMAIL */
-.input_group input {
+.input_group input{
   all: unset;
   padding: 0.75rem;
   width: 100%;
 }
 
 /* BOTÃO PARA ENVIAR EMAIL */
-.input_group button {
+.input_group button{
   background-color: #7f37c9;
   color: var(--color-neutral-40);
   border: none;
   font-size: 1.125rem;
   padding: 0px 1.12rem;
   height: 100%;
-  border-radius: 0px 4px 4px 0px;
+  border-radius:  0px 4px 4px 0px;
   cursor: pointer;
   transition: all 0.4s;
 
@@ -611,13 +612,13 @@ section {
 
 /* HOVER BOTÃO DE ENVIAR EMAIL */
 
-.input_group button :hover {
+.input_group button :hover{
   opacity: 0.8;
 }
 
 /* COPYRIGHT EMBAIXO NO FOOTER */
 
-#footer_copyright {
+#footer_copyright{
   display: flex;
   justify-content: center;
   background-color: var(--color-neutral-0);
@@ -625,8 +626,7 @@ section {
   padding: 1.5rem;
   font-weight: 100;
 }
-
-:root {
+:root{
   --color-neutral-0: #0e0c0c;
   --color-neutral-10: #171717;
   --color-neutral-30: #a8a29e;
