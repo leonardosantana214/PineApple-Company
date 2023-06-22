@@ -1,6 +1,7 @@
 
 
 /* FONTE, E RESET DA PAGINA */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 * {
     font-family: 'Poppins', sans-serif;
@@ -13,7 +14,9 @@
         padding: 0;
         overflow-x: hidden;
       }
+
 /* ESTILO DO MENU */
+
       #header{
         display: flex;
         transition: all 1s ease;
@@ -23,17 +26,39 @@
         position: fixed;
         top: 0;
         left: 0;
+
+        /* (z-index) para colocar o menu na frente  */
+
         z-index: 3;
+
+        /* TAMANHO DO MENU */
+
         width: 100%;
         height: 60px;
+
 /* IMAGENS DA LOGO COM, OS HOVER DOS BOTÕES */
+
+        /* IMAGEM DA LOGO */
+
       }
       #header img{
+
+        /* UTILEI O GAP PARA TER UM ESPAÇAMENTO MAIS ORDENADO */
+
         gap: 2rem;
         height: 70px;
         width: 80px;
       }
+
+      /* BEFORE SE USA COMO SE FOSSE O HOVER POREM ELE É MAIS UTILIZADO PARA PARA USAR NAS LINHAS */
+
       #menu a::before{
+
+        /* TAMANHO DA DOS LINKS E POSICÃO */
+
+
+        /* (CONTENT) SERVE PARA ALTERAR O TAMANHO DA LINKS */
+
         content: "";
         position: absolute;
         width: 100%;
@@ -44,17 +69,34 @@
         visibility: hidden;
         -webkit-transform: scaleX(0);
         transform: scaleX(0);
+
+        /* AS TRANSIÇÕES DO SITE */
+
         -webkit-transition: all 0.3s ease-in-out 0s;
         transition: all 0.3s ease-in-out 0s;
       }
+
+      /* LINK DO MENU COM AS LINHAS NO HOVER A ABAIXO */
+
       #menu a:hover:before {
+
+        /* DEIXEI INVISIVEL PARA QUANDO PASSAR O MOUSE */
+
         visibility: visible;
         color: #000;
+
+        /* ELE TRANSFORMANDO (APARECENDO AS LINHAS ) */
+
         -webkit-transform: scaleX(1);
         transform: scaleX(1);
       }
+
       /* ESTILO DO MENU COMO QUE ELE FICARIA */
+
       #menu {
+
+        /* POSICIONAMETO DOS BOTÕES */
+
         transition: all 1s ;
         height: 1px;
         left: 900px;
@@ -62,9 +104,15 @@
         background-color: #fff;
         padding: 20px;
         position: sticky;
-        top: 80px; /* ALTURA DO CABEÇALHO */
+        top: 80px; 
+        
+        /* ALTURA DO MENU */
       }
-      /* ESTILOS DO MENU */
+
+
+      /* ESTILOS DO MENU (UL, LI E A) */
+
+
       #menu ul {
         list-style-type: none;
         margin: 0;
@@ -89,15 +137,22 @@
       /* ESTILO DO MENUDROP E COMO FUNCIONA */
       .dropdown-content {
         transition: all 1s ease;
+
+        /* SEM DISPLAY POR CAUSA DO ABSOLUTE */
+
         display: none;
         color: white;
         transition: all 1s ease;
         position: absolute;
         background-color: #fff;
+
+        /* MINIMO DA LARGURA */
+
         min-width: 160px;
         z-index: 1;
       }
 
+      /* POSICIONAMENTO DOS TEXTO NOS CONTENT */
 
       .dropdown-content a {
         color: white;
@@ -112,19 +167,31 @@
         display: flex;
       }
       
+      /* HOVER DO MENUDROP */
+      
       .dropdown:hover .dropdown-content {
+
+        /* (DISPLAY BLOCK) PARA BLOQUEAR A POSIÇÃO DO CONTENT E QUANDO PASSAR O MOUSE PORCIMA */
+
         display: block;
         color: white;
         transition: all 1s ease;
       }
       
       /* AI O CSS QUE ESTA NOS CODIGOS DE JS O "IMPOSTOR" */
+
+      /* ESSE É O CSS DA SCROLLBAR DESCENDO E AS TROCAS DE CORES */
+
       .scroll-black {
         background-color: #000 !important;
         color: #fff !important;
         transition: all 1s ease;
       }
       
+      /* COPIE OS CODIGOS PARA QUE ELE FUNCIONE COM AS TAGS DO MENU */
+
+      /* LINKS */
+
       .scroll-black a {
         color: #fff !important;
         display: flex;
@@ -133,6 +200,9 @@
         transition: all 1s ease;
 
       }
+
+      /* SEARCH */
+
       .scroll-black.box-busca {
         color: #fff !important;
         display: flex;
@@ -141,7 +211,9 @@
         transition: all 1s ease;
 
       }
+
       /* SEARCH DO SITE (COLOQUEI EM INGLÊS POIS USEI DE UM SITE DE BASE) */
+
       .box-busca{ 
         display: flex;
         flex-direction: column;
@@ -151,35 +223,68 @@
         height: 100%;
         
     }
+
+    /* PLACEHOLDER A COR DELE E OPACIDADE */
     .search-box-input::placeholder {
         
         color:#ffffff;
         opacity: 0.6;
     }
+
     /* CORES DO PLACEHOLDER  */
-    .search-box-input::-webkit-input-placeholder { color: #ffffff; }
-    .search-box-input::-moz-placeholder { color: #ffffff; }
-    .search-box-input:-ms-input-placeholder { color: #ffffff; }
+
+    .search-box-input::-webkit-input-placeholder {
+       color: #ffffff;
+     }
+
+     /* QUANDO ESTIVER FECHADO O SEARCH */
+
+    .search-box-input::-moz-placeholder {
+       color: #ffffff; 
+    }
+
+    /* QUANDO ESTIVER ABRINDO O SEARCH */
+
+    .search-box-input:-ms-input-placeholder { 
+      color: #ffffff;
+   }
+
+    /* INPUT DO SEACHING */
     .search-box form {
         border: #9747FF solid 2px; 
         display: flex;
         border-radius: 50px;
         height: 30px;
     }
+
+    /* HOVER DELE PARA TER O CRESCIMENTO */
+
     .search-box:hover .search-box-input {
         
         padding-left: 2em;
         padding-right: 1em;
         width: 250px;
     }
+
+     /* QUANDO DESCER A SCROLLBAR */ 
+
     .scroll-black.search-box{
       color: #fff;
       background-color: #000;
     }
+
+    /* COR DO  FUNDO DO BOTÃO PARA QUANDO DESCER A SCROLLBAR */
+
     .scroll-black.search-box-button{
         background-color: #000;
     }
+
+    /* FUNDO DA SCROLL BAR */
+
     .search-box-input {
+
+      /* (OUTLINE É O CONTORNO DO CODIGO */
+
         outline: 0;
         font-size: 1.2em;
         color: #9747FF;
@@ -190,7 +295,9 @@
         background: none;
         transition: .45s;
     }
+
     /* BOTÕES */
+
     .search-box-button {
        display: flex;
        border-radius: 50%;
@@ -201,44 +308,67 @@
        border: none;
        justify-content: center;
        align-items: center;
+
+      /* CURSOR POINTER, É PARA QUE O CURSOR DO MOUSE PARA SER ATIVADO (MAIS UTILIZADO PRO HOVER, BEFORE, E OUTROS) */
+
        cursor: pointer;
-       transition: .3s;
+       transition: 0.3s;
     }
+
+    /* ACTIVE É PARA QUANDO NOS CLICAR E TER UMA ANIMAÇÃO */
+
     .search-box-button:active  {
         transform: scale(.85);
     }
-    /* TAMANDO DO HOVER DO SITE */
+
+    /* TAMANDO DO INPUT RESPONSIVO */
+
     @media screen and (min-width: 400px){
         
         .search-box:hover .search-box-input {
             width: 360px;
         }
     }
+
+    /* VOLTANDO PARA O HEADER, E O É A OPACIDADE NO HOVER */
+
     #header a:hover{
 
         filter: opacity(65%);
 
     }
-    /* MENU DO SITE */
 
-    /* BANNER COM O  DE IMAGENS */
+    /* MAIN DO SITE */
+
+    /* BANNER COM AS IMAGENS */
 
     .slide{
       display: flex;
       flex-flow: nowrap;
       gap: 1px;
       width: 200px;
-      
+
+      /* FIT-CONTENT É PARA AJUSTAR NO CONTENT */
+
       height:fit-content;
       border-radius: 10px;
       width: 100%;
     }
+
+    /* FILTROS NA IMAGENS DO BANNER NO FUNDO */
+
     .banner{
       filter: blur(6px);
     }
+
+    /* ESTILOS E POSICIONAMENTO DA IMAGEM DE FUNDO */
+
     .banner img{
       width: 100%;
       filter: blur(6px);
+
+      /* SATURAÇÃO EM 0% (PRA FICAR PRETO E BRANCO) */
+
       filter: saturate(0%);
       height: 70%;
     }
@@ -248,19 +378,30 @@
       top: 140px;
       max-width: 70%;
       max-height: 100%;
-      border-left: #9747FF 1px solid;
-      border-top: #9747FF 1px solid;
+
+      /* ESSES BORDER ESTÃO AI PARA TER A SUAS PRÓPRIAS CONFIGURAÇÃO */
+
+      border-left: #9747FF 4px solid;
+      border-top: #9747FF 5px solid;
       border-radius: 0 70px 0 0;
-      border-right: #9747FF 1px solid;
+      border-right: #9747FF 3px solid;
     }
+
+    /* TEXTO DO BANNER EM DESTAQUE */
 
     .text-dest p span{
       font-size: 40px;
       color: #fff;
+
+      /* NEGRITO */
+
       font-weight: bolder;
 
     }
     .text-dest p {
+
+      /* COR DA BORDA E FUNDO */
+
       background-color: #00000052;
       border: #00000052 5px solid;
       padding: 5px;
@@ -271,6 +412,9 @@
       right: 840px;
       top: 150px;
     }
+
+    /*BOTÃO PARA LEVAR NA OUTLET  */
+
     .text-dest button{
       background-color: transparent;
       color:#9757FF;
@@ -283,7 +427,9 @@
       margin-left: 10px;
       transition: 0.5s all;
     }
+
     /* HOVER DO BANNER */
+
     .text-dest button:hover{
       color: #fff;
       border: #fff solid 2px;
@@ -292,9 +438,13 @@
     }
 
     /* DESTAQUE DE PROMOÇÃO */
+
     .Destaques{
       text-align: center;
     }
+
+    /*  H1 EM DESTAQUE NO SITE*/
+    
     .Destaques h1{
       font-size: 75px;
       font-weight: bolder
@@ -302,7 +452,9 @@
     .Destaques span{
       font-weight: 300
     }
+
     /* ITENS Á VENDA */
+
     .itens{
       width: 100%;
       height: 600px;
@@ -313,51 +465,76 @@
       flex-direction: row;
       padding-top: 20px;
     }
+
+    /* LINKS DA CAIXA */
+
     .itens a {
       text-decoration: none;
       color: black;
     }
+
+    /* IMAGEM DENTRO DO CONTAINER */
+
     .produtos img{
       width: 250px;
       padding: 10px;
       height: 200px;
     }
+
+    /* ESTILO DOS PRODUTOS */
+
     .produtos{
       transition: all 0.5s ease;
       border: solid 1px rgba(128, 128, 128, 0.397);
       text-align: center;
     }
+
+    /* LETRAS DAS PALAVRAS QUE ESTÃO NO ITENS */
+
     .produtos span{
       font-weight: bolder;
       font-size: xx-large;
     }
+
     .sub{
       margin-right: 120px;
       font-weight: 100;
       font-size: small;
       color: gray;
     }
+
+    /* AVISO DE FRETE GRATIS */
+
     .frete{
       font-weight: 200;
       margin-right: 130px;
       font-size: small;
       color: #9747FF;
     }
+
+    /* HR, DO PRODUTOS */
+
     .produtos hr{
       width: 240px;
       color: rgba(128, 128, 128, 0.322);
     }
+
+    /* CARRINHO DE COMPRAS */
+
     .cart{
       height: 10px;
       background-color: transparent;
       transition: 1s;
       margin-right: -230px;
     }
+
     .cart {
       color: black;
       transition: 1s;
     }
+
     /* HOVER DOS ITENS */
+
     .produtos:hover{
       transform: scale(1.1) ;
       transition: all 0.5s ease;
@@ -367,10 +544,15 @@
       color: #9747FF;
       transition: 1s;
     }
+
     /* BANNER DA COPA */
+
     .banner-NBA-cup{
       z-index: -3;
     }
+
+    /* BANNER DO FUNDO */
+
     .banner-NBA-cup img{
       margin-top: 20vh;
       width: 102%;
@@ -380,12 +562,9 @@
       margin-left: -30px;
 
     }
-    .text-NBA-cup p span{
-      color: #fff;
-      font-weight: bolder;
-      font-size: 50px;
 
-    }
+    /* ESTILOS DA IMAGEM  */
+
     .text-NBA-cup p{
       font-size: 20px;
       position: absolute;
@@ -397,12 +576,14 @@
       border: #00000052 solid 2px;
       padding: 5px;
     }
+
     .text-NBA-cup p img{
       max-height: 60px;
       max-width: 60px;
     }
 
     /* NBA COLOSSAL */
+
     .vd-colossal video{
       height: 60%;
       width: 60%;
@@ -414,7 +595,11 @@
     }
 
     /* MUDANÇA NO CLIQUE */
+
     .list-colossal li {
+
+      /* MARQUEI ESSAS VARIAVEIS PARA QUE POSSA FACILITAR O HOVER E OS POSICIONAMENTOS */
+
       --s: 80px;  
       --b: 8px;     
       --g: 14px;    
@@ -423,13 +608,22 @@
       left: 400px;
       top: 40px; */
       display: flex;
+
+      /* EVENLY, DEIXA ELES CERTINHO O TAMANHO, TOTALMENTE UNIFORME */
+
       justify-content: space-evenly;
       margin-top: 120px;
       margin-left: 20px;
       align-items: center;
       width: 80px;
       flex-direction: row;
+
+      /* CAL, FOI PARA CALCULAR O TAMANDO DO OUTLINE ANTES DO HOVER */
+
       outline: calc(80px/2) solid #0009;
+
+      /* OFFSETT É UM DESVIO */
+
       outline-offset: calc(80px/-2);
       cursor: pointer;
       transition: 0.3s;
@@ -437,18 +631,22 @@
       cursor: pointer;
       display: inline-block
     }
+
     /* HOVER */
+
     .list-colossal li:hover{
       outline: 8px solid #9747FF;
       outline-offset: 14px;
     }
+
+    /* CONFIGURAÇÃO DAS IMAGENS DOS TIMES */
+
     .list-colossal li img{
       max-width: 80px;
       transition: 1s;
       z-index: 1;
-
-      
     }
+
     .list-colossal{
       position: absolute;
       left: 30%;
@@ -464,6 +662,9 @@
     .circulo{
       background-color: #9747FF;
       position: absolute;
+
+      /* SERVE PARA FAZER UM CIRCULO */
+
       clip-path: circle(250px);
       top: 2000px;
       left: 400px;
@@ -484,8 +685,14 @@
       right: 15px;
       display: block;
       border-radius: 50px;
+
+      /* ANIMAÇÃO DO SITE, PASSO A PASSO */
+
       animation: quadrado 3s  infinite alternate ;
     }
+
+    /* KEYFRAMES PARA FAZER A ANIMAÇÃO DE VAI E VOLTA FROM E TO */
+    
     @keyframes quadrado {
       from{
         margin-right: 700px;
@@ -496,6 +703,7 @@
         width: 10%;
     }
     }
+
     .quadrado1{
       background-color: #9747FF;
       height: 20%;
@@ -505,6 +713,9 @@
       top: 2145px;
       right: 390px;
       border-radius: 50px;
+
+      /* FIZ A MESMA */
+
       animation: quadrado1 3s  infinite alternate ;
     }
     @keyframes quadrado1 {
@@ -518,7 +729,8 @@
     }
   }
 
-    /* tela De Carregamento */
+    /* TELA DE CARREGAMENTO */
+
 #loader-wrapper {
   transition: all ease-in-out 2s;
   position: fixed;
@@ -527,10 +739,20 @@
   background-color: #000;
   width: 100%;
   height: 100%;
+
+/* FICAR NA FRENTE DE TUDO */
+
   z-index: 1000;
 }
+
 #loader {
+
+  /* BLOQUEAR O DISPLAY */
+
   display: block;
+
+  /* POSITION DO CARREGAMENTO */
+  
   position: relative;
   left: 50%;
   top: 50%;
@@ -539,9 +761,16 @@
   margin: -75px 0 0 -75px;
 
   border: 3px solid purple;
+
+  /* FICAR NA FRENTE DE TUDO */
+
   z-index: 1500;
 }
+
 #loader:before {
+
+  /* TAMANHO  TOTAL DO CONTENT*/
+
   content: "";
   position: absolute;
   top: 5px;
@@ -550,7 +779,11 @@
   bottom: 5px;
   border: 3px solid #9747FF;
 }
+
 #loader:after {
+
+  /* "" */
+
   content: "";
   position: absolute;
   top: 15px;
@@ -559,33 +792,46 @@
   bottom: 15px;
   border: 3px solid #fff;
 }
+
 #loader {
   border: 3px solid transparent;
   border-top-color: purple;
 }
+
 #loader:before {
   border: 3px solid transparent;
   border-top-color: #9747FF;
 }
+
 #loader:after {
   border: 3px solid transparent;
   border-top-color: #fff;
 }
+
 #loader {
   border-radius: 50%;
 }
+
 #loader:before {
   border-radius: 50%;
 }
+
 #loader:after {
   border-radius: 50%;
 }
+
 #loader, #loader:before, #loader:after{
+
+  /* ANIMAÇÃO */
+
   animation: spin 1.5s linear infinite;
   -webkit-animation: spin 1.5s linear infinite;
 }
 
 /* ANIMAÇÃO DAS CORES RODANDO */
+
+/* TRANSFORM LINHA POR LINHA */
+
 @-webkit-keyframes spin {
   0%   {
       -webkit-transform: rotate(0deg); 
@@ -598,6 +844,8 @@
       transform: rotate(360deg);  
   }
 }
+
+
 @keyframes spin {
   0%   {
       -webkit-transform: rotate(0deg);
@@ -616,10 +864,12 @@
   animation: spin 2s linear infinite;
   transition: all 2s;
 }
+
 #loader:before {
   -webkit-animation: spin 3s linear infinite;
   animation: spin 3s linear infinite;
 }
+
 #loader-wrapper {
   position: fixed;
   top: 0;
@@ -628,6 +878,7 @@
   height: 100%;
   z-index: 1000;
 }
+
 #loader {
   display: block;
   position: relative;
@@ -880,11 +1131,13 @@
 }
 
 /* HOVER BOTÃO DE ENVIAR EMAIL */
+
 .input_group button :hover{
   opacity: 0.8;
 }
 
 /* COPYRIGHT EMBAIXO NO FOOTER */
+
 #footer_copyright{
   display: flex;
   justify-content: center;
