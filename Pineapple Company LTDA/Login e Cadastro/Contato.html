@@ -127,7 +127,22 @@
     </header>
 
     <!-- JAVASCRIPT DO MENU -->
-
+    <script>
+        // QUANDO DESCER A SCROLLBAR TROCAR AS CORES DO SITE
+        window.addEventListener("scroll", function () {
+            // VARIAVEIS PARA A TROCAR DE CORES (ELES ESTÃO LINKADOS NO CSS)
+            var header = document.getElementById("header");
+            var menu = document.getElementById("menu");
+            // AQUI É PARA SABER SE DESCEU OU NÃO IF PARA TROCAR A COR E ELSE PARA NÃO TROCAR
+            if (window.scrollY > 0) {
+                header.classList.add("scroll-black");
+                menu.classList.add("scroll-black");
+            } else {
+                header.classList.remove("scroll-black");
+                menu.classList.remove("scroll-black");
+            }
+        });
+    </script>
 
     <!-- MAIN -->
     <main>
