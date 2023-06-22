@@ -1,59 +1,319 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chuteiras e Equipamentos de Futebol</title>
-  <link rel="stylesheet" href="CSS/Outfit_Chuteira.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela chuteiras</title>
+    <link rel="stylesheet" href="CSS/Style_Chuteiras.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="JS/Chuteiras.js">
+    <link rel="shortcut icon" href="img/Sem título.png" type="image/x-icon">
 </head>
+
 <body>
-  <header>
-    <h1>Chuteiras e Equipamentos de Futebol</h1>
-  </header>
+     <!-- MENU DO SITE HEADER NAV (PARA OS BOTÕES) -->
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Início</a></li>
-      <li><a href="corrida.html">Roupas e Itens de Corrida</a></li>
-      <li><a href="basquete.html">Roupas e Itens de Basquete</a></li>
-    </ul>
-  </nav>
+  <header id="header">
 
-  <main>
-    <section id="products">
-      <h2>Chuteiras</h2>
-      <div class="item">
-        <a href="carrinho.html">
-          <img src="img/CHUTEIRA TESTE.webp" alt="Chuteira 1">
-          <div class="overlay">
-            <h3>Chuteira 1</h3>
-            <p>Preço: R$199,99</p>
-          </div>
-        </a>
-      </div>
-      <div class="item">
-        <a href="carrinho.html">
-          <img src="img/CHUTEIRA TESTE.webp" alt="Chuteira 2">
-          <div class="overlay">
-            <h3>Chuteira 2</h3>
-            <p>Preço: R$149,99</p>
-          </div>
-        </a>
-      </div>
-      <div class="item">
-        <a href="carrinho.html">
-          <img src="img/CHUTEIRA TESTE.webp" alt="Chuteira 3">
-          <div class="overlay">
-            <h3>Chuteira 3</h3>
-            <p>Preço: R$179,99</p>
-          </div>
-        </a>
-      </div>
+    <!-- LOGO DA PINEAPPLE (LOGO DO LOGIN) -->
+
+  <a href="#"><img src="img/Pineapple_logo_Roxo.png" alt=""></a>
+
+        <!-- NAV DO MENU -->
+  
+          <nav id="menu"> 
+      
+            <!-- LISTA DOS BOTÕES -->
+
+            <ul>
+              
+              <!-- HOME -->
+              <li><a href="PaginaInicial.html">HOME</a></li>
+
+              <!-- MENUDROP, PARA APARECER AS OPÇÕES DE COMPRAS NO MEU -->
+
+              <!-- ITENS DOS MENUDRÓP -->
+
+              <li class="dropdown">
+
+                <!-- EQUIPAMENTOS -->
+
+                <a href="">EQUIPAMENTOS</a>
+
+                <!-- ITENS DO MENUDROP -->
+
+                <div class="dropdown-content">
+
+                  <!-- FUTEBOL -->
+
+                  <a href="Tela_Chuteiras.html">FUTEBOL</a>
+
+                  <!-- EQUIPAMENTOS DE BASQUETE -->
+
+                  <a href="Tela_Basquete.html">BASQUETE</a>
+
+                  <!-- CORRIDA -->
+
+                  <a href="Tela_Corrida.html">CORRIDA</a>
+
+
+                </div>
+              </li>
+              <!-- OUTLET -->
+
+              <li><a href="Outlet.html">OUTLET</a></li>
+
+              <!-- CONTATO -->
+
+              <li><a href="Contato.html">CONTATE-NOS</a></li>
+
+              <!-- SOBRE-NÓS -->
+
+              <li><a href="Historico.html">SOBRE-NÓS</a></li>
+
+              <li>
+                  <!-- SEARCH -->
+
+                <div class="box-busca">
+
+                    <!-- FORMULARIOSINHO -->
+
+                  <div class="search-box">
+                      
+                    <!-- METODO POST -->
+
+                      <form method="post">
+
+                          <!-- INPUT DO SEARCH -->
+
+                          <input type="search" class="search-box-input" name="busca" placeholder="Faça sua Pesquisa">
+
+                        <!-- BOTÃO DO SEARCHING -->
+
+                          <button class="search-box-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                      
+                      </form>
+                      
+                  </div>
+                  
+                  <!-- SEARCH -->
+              
+              </div>
+
+              <!-- BOX BUSCA-->
+              </li>
+
+
+
+              <!-- CARRINHO -->
+              
+              <li><a href="#"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+
+              <li class="dropdown">
+
+              <!-- CONTA LOGAR OU CADASTRO -->
+
+              <a href=""><i class="fa-solid fa-user"></i></a>
+
+              </div>
+            </li>
+            </ul>
+          </nav>
+</header>
+
+    <script>
+        // QUANDO DESCER A SCROLLBAR TROCAR AS CORES DO SITE
+        window.addEventListener("scroll", function () {
+            // VARIAVEIS PARA A TROCAR DE CORES (ELES ESTÃO LINKADOS NO CSS)
+            var header = document.getElementById("header");
+            var menu = document.getElementById("menu");
+            // AQUI É PARA SABER SE DESCEU OU NÃO IF PARA TROCAR A COR E ELSE PARA NÃO TROCAR
+            if (window.scrollY > 0) {
+                header.classList.add("scroll-black");
+                menu.classList.add("scroll-black");
+            } else {
+                header.classList.remove("scroll-black");
+                menu.classList.remove("scroll-black");
+            }
+        });
+    </script>
+
+<br><br>
+    <div class="linha">
+        <hr size="3px">
+    </div>
+    <div class="Dp">
+
+    </div>
+    <div>
+        <div class="banner">
+            <p class="desconto"> 50% <br>
+                de Desconto
+            </p>
+            <img src="img/banner.jpeg" alt="">
+
+        </div>
+
+        <!-- <div class="banner2">
+            <img src="img/banner2.png" alt="">
+        </div> -->
+
+    </div>
+    <div class="Dp">
+        <p>DESTAQUES</p>
+    </div>
+
+    <div class="linha">
+        <hr size="3px">
+    </div>
+
+    <div class="text">
+        <p>Ordenar por:</p>
+    </div>
+
+    <div class="orden">
+
+        <div class="border">
+
+            <div class="Tonhao" tabindex="0">
+                &nbsp;Preço: do maior para o menor&nbsp;
+            </div>
+        </div>
+            <div class="Tl" tabindex="0">
+                &nbsp;Nome do produto: z - a&nbsp;
+            </div>
+
+    </div>
+    <!-- produtos -->
+    <section class="wrap-photo">
+        <img class="photo" src="img/chuteira1.jpeg" alt="Imagem de exemplo">
+        <p class="P">Chuteira Nike Zoom<br> R$349,99</p>
+        <img class="photo" src="img/chuteira2.jpeg" alt="Imagem de exemplo">
+        <p class="P">Chuteira de Campo ADIDAS<br> R$ 529,00</p>
+        <img class="photo" src="img/chuteira3.jpeg" alt="Imagem de exemplo">
+        <p class="P">Chuteira ultra Matcho<br> R$ 180,00</p>
+        <img class="photo" src="img/chuteirazap.jpeg" alt="Imagem de exemplo">
+        <p class="P">Chuteirazap usada por pele<br> R$98732,6320</p>
+        <img class="photo" src="img/chuteira5.jpeg" alt="Imagem de exemplo">
+        <p class="P"> Chuteira nike Pumpe <br> R$350,00</p>
+        <img class="photo" src="img/chuteira6.jpeg" alt="Imagem de exemplo">
+        <P class="P"> Chuteira Nike Beco 2 Society <br>R$450,00</P>
+        <img class="photo" src="img/chuteira7.jpeg" alt="Imagem de exemplo">
+        <p class="P">Chuteira Nike Mercurial<br> R$ 439,90</p>
+        <img class="photo" src="img/chuteira8.jpeg" alt="Imagem de exemplo">
+        <p class="P">chuteira nike mercu surperfly  <br> R$650,00</p>
+        <img class="photo" src="img/chuteira9.jpeg" alt="Imagem de exemplo">
+        <p class="P">Chuteira Nike Mercurial  <br> R$450,00</p>
+        <img class="photo" src="img/chuteira10.jpeg" alt="Imagem de exemplo">
+        <p class="P">Chuteira Society Nike <br> R$540,00</p>
+        <img class="photo" src="img/chuteira11.jpeg" alt="Imagem de exemplo">
+        <p class="P"> Chuteira Nike Mercurial <br> R$ 560,00</p>
+        <img class="photo" src="img/chuteira12.jpeg" alt="Imagem de exemplo">
+        <p class="P">Chuteira NIKE Phantom  <br> R$249,99</p>
+        <img class="photo" src="img/chuteira13.jpeg" alt="Imagem de exemplo">
+        <p class="P">Chuteira Nike Mercu Superfly  <br> R$489.90</p>
+        <img class="photo" src="img/chuteira14.jpeg" alt="Imagem de exemplo">
+        <p class="P">Chuteira Nike Mercurial <br> R$300,00</p>
+        <img class="photo" src="img/chuteira15.jpeg" alt="Imagem de exemplo">
+        <p class="P">CHUTEIRA X SPEEDPORTAL+ <br>R$1.099,98</p>
+
+
+
     </section>
-  </main>
 
-  <footer>
-    <p>Desenvolvido por [Seu Nome]</p>
-  </footer>
+
+
+
+
+
+
+
+
+    <br><br>
+    <br><br>
+
+    <footer>
+
+        <!-- DIV PRINCIPAL DO FOOTER -->
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <a href="" class="footer_link" id="pineapple">
+                    <i class="fa-sharp fa-light fa-pineapple"></i>
+                </a>
+                <p>Pineapple's Company</p>
+
+                <!-- REDES SOCIAIS -->
+                <div id="footer_social_media">
+                    <a href="" class="footer_link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="" class="footer_link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="" class="footer_link" id="twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- BLOG -->
+            <ul class="footer_list">
+                <li>
+                    <h3>Página inicial</h3>
+                </li>
+                <li>
+                    <a href="PaginaInicial.html" class="footer_link">Home</a>
+                </li>
+                <li>
+                    <a href="Contato.html" class="footer_link">Contate-nos</a>
+                </li>
+                <li>
+                    <a href="Historico.html" class="footer_link">Sobre nós</a>
+                </li>
+            </ul>
+
+            <!-- PRODUTOS -->
+            <ul class="footer_list">
+                <li>
+                    <h3>Produtos</h3>
+                </li>
+                <li>
+                    <a href="Outlet.html" class="footer_link">Outlet</a>
+                </li>
+                <li>
+                    <a href="Tela_Basquete.html" class="footer_link">Basquete</a>
+                </li>
+                <li>
+                    <a href="PaginaInicial.html" class="footer_link">Home</a>
+                </li>
+            </ul>
+
+            <!-- INSCREVA-SE -->
+            <div id="footer_subscribe">
+                <h3>Login/Cadastro</h3>
+                <p>Entre com seu e-mail para se inscrever e receber nossas promoções</p>
+
+                <!-- INSERIR EMIAL DE INSCRIÇÃO -->
+                <div class="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- COPÝRIGHT -->
+        <div id="footer_copyright">
+            &copy;
+            2023 Todos os direitos reservados.
+        </div>
+    </footer>
+
 </body>
+
 </html>
