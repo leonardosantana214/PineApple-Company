@@ -105,6 +105,11 @@ form:hover {
     color: white;
     transition: 1s;
 }
+
+.t3 a{
+    text-decoration: none;
+    color: #fff;
+}
 .Rua {
     width: 5%;
     border-radius: 0;

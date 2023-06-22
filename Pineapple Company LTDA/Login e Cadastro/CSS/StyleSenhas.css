@@ -35,6 +35,23 @@ form {
     
 }
 
+.confirmar{
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.confirmar a{
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
 /* INSIVIBILIDADE INPUT EMAIL */
 .f1 {
     background-color: transparent;

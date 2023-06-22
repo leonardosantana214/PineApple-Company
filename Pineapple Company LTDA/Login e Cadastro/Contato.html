@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contato.css">
-    <script src="Menu.js"></script>
+    <link rel="stylesheet" href="CSS/contato.css">
+    <script src="JS/Menu.js"></script>
     <title>Contate-nos</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -14,83 +14,117 @@
 </head>
 
 <body>
-<header id="header">
 
-    <!-- LOGO DA PINEAPPLE (LOGO DO LOGIN) -->
+    <!-- MENU DO SITE HEADER NAV (PARA OS BOTÕES) -->
 
-  <a href="#"><img src="img/Pineapple_logo_Roxo.png" alt=""></a>
+    <header id="header">
+
+        <!-- LOGO DA PINEAPPLE (LOGO DO LOGIN) -->
+
+        <a href="#"><img src="img/Pineapple_logo_Roxo.png" alt=""></a>
 
         <!-- NAV DO MENU -->
-  
-          <nav id="menu"> 
-      
+
+        <nav id="menu">
+
             <!-- LISTA DOS BOTÕES -->
 
             <ul>
-              
-              <!-- HOME -->
-              <li><a href="#">HOME</a></li>
 
-              <!-- MENUDROP, PARA APARECER AS OPÇÕES DE COMPRAS NO MEU -->
+                <!-- HOME -->
+                <li><a href="PaginaInicial.html">HOME</a></li>
 
-              <!-- ITENS DOS MENUDRÓP -->
+                <!-- MENUDROP, PARA APARECER AS OPÇÕES DE COMPRAS NO MEU -->
 
-              <li class="dropdown">
+                <!-- ITENS DOS MENUDRÓP -->
 
-                <!-- EQUIPAMENTOS -->
+                <li class="dropdown">
 
-                <a href="#">EQUIPAMENTOS</a>
+                    <!-- EQUIPAMENTOS -->
 
-                <!-- ITENS DO MENUDROP -->
+                    <a href="">EQUIPAMENTOS</a>
 
-                <div class="dropdown-content">
+                    <!-- ITENS DO MENUDROP -->
 
-                  <!-- FUTEBOL -->
+                    <div class="dropdown-content">
 
-                  <a href="#">FUTEBOL</a>
+                        <!-- FUTEBOL -->
 
-                  <!-- EQUIPAMENTOS DE BASQUETE -->
+                        <a href="Tela_Chuteiras.html">FUTEBOL</a>
 
-                  <a href="#">BASQUETE</a>
+                        <!-- EQUIPAMENTOS DE BASQUETE -->
 
-                  <!-- CORRIDA -->
+                        <a href="Tela_Basquete.html">BASQUETE</a>
 
-                  <a href="#">CORRIDA</a>
+                        <!-- CORRIDA -->
 
-
-                </div>
-              </li>
-              <!-- OUTLET -->
-
-              <li><a href="#">OUTLET</a></li>
-
-              <!-- CONTATO -->
-
-              <li><a href="#">CONTATE-NOS</a></li>
-
-              <!-- SOBRE-NÓS -->
-
-              <li><a href="#">SOBRE-NÓS</a></li>
-
-              <li>
+                        <a href="Tela_Corrida.html">CORRIDA</a>
 
 
+                    </div>
+                </li>
+                <!-- OUTLET -->
 
-              <!-- CARRINHO -->
-              
-              <li><a href="#"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="Outlet.html">OUTLET</a></li>
 
-              <li class="dropdown">
+                <!-- CONTATO -->
 
-              <!-- CONTA LOGAR OU CADASTRO -->
+                <li><a href="Contato.html">CONTATE-NOS</a></li>
 
-              <a><i class="fa-solid fa-user"></i></a>
+                <!-- SOBRE-NÓS -->
 
-              </div>
-            </li>
+                <li><a href="Historico.html">SOBRE-NÓS</a></li>
+
+                <li>
+                    <!-- SEARCH -->
+
+                    <div class="box-busca">
+
+                        <!-- FORMULARIOSINHO -->
+
+                        <div class="search-box">
+
+                            <!-- METODO POST -->
+
+                            <form method="post">
+
+                                <!-- INPUT DO SEARCH -->
+
+                                <input type="search" class="search-box-input" name="busca"
+                                    placeholder="Faça sua Pesquisa">
+
+                                <!-- BOTÃO DO SEARCHING -->
+
+                                <button class="search-box-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+                            </form>
+
+                        </div>
+
+                        <!-- SEARCH -->
+
+                    </div>
+
+                    <!-- BOX BUSCA-->
+                </li>
+
+
+
+                <!-- CARRINHO -->
+
+                <li><a href="#"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+
+                <li class="dropdown">
+
+                    <!-- CONTA LOGAR OU CADASTRO -->
+
+                    <a href=""><i class="fa-solid fa-user"></i></a>
+
+                    </div>
+                </li>
             </ul>
-          </nav>
-</header>
+        </nav>
+    </header>
 
     <!-- JAVASCRIPT DO MENU -->
 
@@ -103,7 +137,7 @@
 
             <!-- SECTION COM A IMAGEM -->
             <section class="container_img">
-                <img src="img/contato.png" alt="">
+                <img src="img/Contato.jpeg" alt="">
             </section>
 
             <!-- QUADRO COM O CONTATE-NOS -->
@@ -169,10 +203,10 @@
                     <a href="PaginaInicial.html" class="footer_link">Home</a>
                 </li>
                 <li>
-                    <a href="" class="footer_link">Moda</a>
+                    <a href="Historico.html" class="footer_link">Sobre nós</a>
                 </li>
                 <li>
-                    <a href="" class="footer_link">Promoções</a>
+                    <a href="Contato.html" class="footer_link">Contate-nos</a>
                 </li>
 
             </ul>
@@ -184,13 +218,13 @@
                     <h3>Produtos</h3>
                 </li>
                 <li>
-                    <a href="" class="footer_link">Outlet</a>
+                    <a href="Outlet.html" class="footer_link">Outlet</a>
                 </li>
                 <li>
-                    <a href="" class="footer_link">Esportes</a>
+                    <a href="Tela_Basquete.html" class="footer_link">Basquete</a>
                 </li>
                 <li>
-                    <a href="" class="footer_link">Galeria</a>
+                    <a href="PaginaInicial.html" class="footer_link">Home</a>
                 </li>
 
             </ul>

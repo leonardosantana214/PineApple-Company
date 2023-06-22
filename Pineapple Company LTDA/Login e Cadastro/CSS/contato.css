@@ -87,7 +87,7 @@ body {
 
 #menu ul li a {
     color: #000;
-    font-size: 25px;
+    font-size: 18px;
     transition: all 1s ease;
     position: relative;
     text-decoration: none;
@@ -262,7 +262,7 @@ main{
     gap: 100px;
 }
 /* IMAGEM */
-.comtainer_img img{
+.container_img img{
     height:600px;
     width: 500px;
     border: 1px solid black;
