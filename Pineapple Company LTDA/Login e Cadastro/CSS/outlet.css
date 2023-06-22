@@ -596,3 +596,35 @@ footer{
   padding: 1.5rem;
   font-weight: 100;
 }
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 600px){
+  #header{
+    max-width: 100%;
+    height: 160px;
+    display: grid;
+    grid-row: 2rem;
+    flex-wrap: nowrap;
+    
+  }
+  .box-busca{
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  #header li a{
+    font-size:x-small ;
+    margin-left: 50px;
+    top: -90px;
+  }
+  #header img{
+    max-width: 30px;
+    max-height: 30px;
+  }
+  section{
+    overflow-x: scroll;
+    overflow-y: hidden ;
+  }
+}
+
