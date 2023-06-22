@@ -6,7 +6,7 @@ body {
 }
 
 
-/* titulo */
+/* TÍTULO */
 .F1 {
     color: #000;
     display: flex;
@@ -17,6 +17,8 @@ body {
     size: 100px;
    
 }
+
+/* BODY */
 body {
     background-color: white;
     background-size: auto;
@@ -28,7 +30,7 @@ body {
     
 }
 
-/* texto dos inputs */
+/* TEXTO DOS INPUTS */
 .F2, .f4, .F3, .F5, .feminino, .Masculino, .nãobinario, .Generos, .A1, .T6, .Data, .estado, .T7, .T10, .numero{
     font-size: 17px;
     color: #000;
@@ -58,7 +60,8 @@ body {
     color: #9747FF
     
 }
-/* formulario */
+
+/* FORMULÁRIO */
 form {
     border: solid 10px #000;
     position: relative;
@@ -114,7 +117,7 @@ form:hover {
     width: 5%;
     border-radius: 0;
 }
-/* tela De Carregamento */
+/* TELA DE CARREGAMENTO */
 #loader-wrapper {
     transition: all ease-in-out 2s;
     position: fixed;
@@ -181,7 +184,7 @@ form:hover {
     -webkit-animation: spin 1.5s linear infinite;
  }
 
-/* include this only once */
+/* ANIMAÇÃO DE CARREGAMENTO SPIN */
 @-webkit-keyframes spin {
     0%   {
         -webkit-transform: rotate(0deg); 
@@ -266,6 +269,7 @@ form:hover {
       animation: spin 1.5s linear infinite; 
 }
  
+/* TELA DE CARREGAMENTO */
 @-webkit-keyframes spin {
     0%   {
         -webkit-transform: rotate(0deg);  
@@ -278,6 +282,8 @@ form:hover {
         transform: rotate(360deg);
     }
 }
+
+/* TELA DE CARREGAMENTO */
 @keyframes spin {
     0%   {
         -webkit-transform: rotate(0deg);  
@@ -290,24 +296,28 @@ form:hover {
         transform: rotate(360deg); 
     }
 }
-/* Content */
+/* CONTENT */
 #content{
     transition: 2s;
 
 }
-/* scrollBar */
+
+/* CONFIGURAÇÕES SCROLLBAR */
 ::-webkit-scrollbar{
     color: transparent;
     border: solid transparent 1px;
 }
+
 ::-webkit-scrollbar-button{
     color: gray;
     background-color: transparent;
 }
+
 ::-webkit-scrollbar-thumb{
     transition: 1s;
     width: 1px;
 }
+
 ::-webkit-scrollbar-thumb:hover{
     color:gray;
     transition: 1.0s;
@@ -316,10 +326,13 @@ form:hover {
     width: 1px;
     
 }
+
+/* RESET ED CONFIGURAÇÕES */
 *{
     margin: auto;
 }
-/* focus */
+
+/* FOCUS DOS INPUT */
 .rua:focus, .Nome:focus, .vila:focus, .city:focus, .Texto:focus, .estado:focus, .nascimento:focus, .C1:focus, .C2:focus, .C3:focus, .feminino:focus, .Data:focus, .estado:focus, .Rua:focus {
     outline-color:purple ;
     outline-style: solid;
