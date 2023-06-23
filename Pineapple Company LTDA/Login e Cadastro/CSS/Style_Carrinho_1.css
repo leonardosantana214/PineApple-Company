@@ -410,6 +410,10 @@ background-color: #000;
     transition: 0.5s;
 }
 
+.adicionar a{
+  text-decoration: none;
+  color: #fff;
+}
 
 .adicionar:hover{
   background-color: #9747FF;
