@@ -92,11 +92,21 @@ form:hover {
   color: white;
   font-family: monospace;
   background-color: black;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: 1s;
   width: 140px;
   height: 50px;
   border-radius: 10px;
   border: none;
+}
+
+.F2 a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
 }
 
 /* HOVER BOTÃO ENVIAR */
